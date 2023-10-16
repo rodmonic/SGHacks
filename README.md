@@ -1,7 +1,7 @@
 # SGHacks
 Horizon Scanning Hackathon
 
-##Horizon Scanning
+## Horizon Scanning
 
 Horizon Scanning is the systematic outlook to detect early signs of potentially important developments.
 These can be weak (or early) signals, trends, wild cards or other developments, persistent problems, risks and threats, including matters at the margins of current thinking that challenge past assumptions.
@@ -19,7 +19,8 @@ https://api.plos.org/solr/examples/
 
 There are also Python libraries to help automatically retrieve papers. PyPaperBot is an example of this. 
 
-##Other sources could be:
+## Other sources could be:
+
 Google news alerts for: innovation(s), technology, technologies, emerging technology,
 emerging technologies, technological innovation(s)
 
