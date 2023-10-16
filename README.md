@@ -1,2 +1,2 @@
 # SGHacks
-Horixon Scanning Hackathon
+Horizon Scanning Hackathon
