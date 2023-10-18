@@ -1,0 +1,467 @@
+,Title,PDF URL,Author,DOI,Published Date,Summary,Journal Ref,Primary Category,Category,Entry ID
+0,"Cutting $γ$-Liouville quantum gravity by Schramm-Loewner evolution for $κ\not\in \{γ^2, 16/γ^2\}$",http://arxiv.org/pdf/2310.11455v1,"[arxiv.Result.Author('Morris Ang'), arxiv.Result.Author('Ewain Gwynne')]",,2023-10-17 17:59:54+00:00,"There are many deep and useful theorems relating Schramm-Loewner evolution
+(SLE$_\kappa$) and Liouville quantum gravity ($\gamma$-LQG) in the case when
+the parameters satisfy $\kappa \in \{\gamma^2, 16/\gamma^2\}$. Roughly
+speaking, these theorems say that the SLE$_\kappa$ curve cuts the $\gamma$-LQG
+surface into two or more independent $\gamma$-LQG surfaces. We extend these
+theorems to the case when $\kappa \not\in \{\gamma^2, 16/\gamma^2\}$. Roughly
+speaking we show that if we have an appropriate variant of SLE$_\kappa$ and an
+independent $\gamma$-LQG disk, then the SLE curve cuts the LQG disk into two or
+more $\gamma$-LQG surfaces which are conditionally independent given the values
+along the SLE curve of a certain collection of auxiliary imaginary geometry
+fields, viewed modulo conformal coordinate change. These fields are sampled
+independently from the SLE and the LQG and have the property that that the sum
+of the central charges associated with the SLE$_\kappa$ curve, the $\gamma$-LQG
+surface, and the auxiliary fields is 26. This condition on the central charge
+is natural from the perspective of bosonic string theory. We also prove
+analogous statements when the SLE curve is replaced by, e.g., an LQG metric
+ball or a Brownian motion path. Statements of this type were conjectured by
+Sheffield and are continuum analogs of certain Markov properties of random
+planar maps decorated by two or more statistical physics models. We include a
+substantial list of open problems.",,math.PR,"['math.PR', 'math-ph', 'math.MP']",http://arxiv.org/abs/2310.11455v1
+1,VeRA: Vector-based Random Matrix Adaptation,http://arxiv.org/pdf/2310.11454v1,"[arxiv.Result.Author('Dawid Jan Kopiczko'), arxiv.Result.Author('Tijmen Blankevoort'), arxiv.Result.Author('Yuki Markus Asano')]",,2023-10-17 17:59:46+00:00,"Low-rank adapation (LoRA) is a popular method that reduces the number of
+trainable parameters when finetuning large language models, but still faces
+acute storage challenges when scaling to even larger models or deploying
+numerous per-user or per-task adapted models. In this work, we present
+Vector-based Random Matrix Adaptation (VeRA), which reduces the number of
+trainable parameters by 10x compared to LoRA, yet maintains the same
+performance. It achieves this by using a single pair of low-rank matrices
+shared across all layers and learning small scaling vectors instead. We
+demonstrate its effectiveness on the GLUE and E2E benchmarks, and show its
+application in instruction-following with just 1.4M parameters using the Llama2
+7B model.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11454v1
+2,BitNet: Scaling 1-bit Transformers for Large Language Models,http://arxiv.org/pdf/2310.11453v1,"[arxiv.Result.Author('Hongyu Wang'), arxiv.Result.Author('Shuming Ma'), arxiv.Result.Author('Li Dong'), arxiv.Result.Author('Shaohan Huang'), arxiv.Result.Author('Huaijie Wang'), arxiv.Result.Author('Lingxiao Ma'), arxiv.Result.Author('Fan Yang'), arxiv.Result.Author('Ruiping Wang'), arxiv.Result.Author('Yi Wu'), arxiv.Result.Author('Furu Wei')]",,2023-10-17 17:59:15+00:00,"The increasing size of large language models has posed challenges for
+deployment and raised concerns about environmental impact due to high energy
+consumption. In this work, we introduce BitNet, a scalable and stable 1-bit
+Transformer architecture designed for large language models. Specifically, we
+introduce BitLinear as a drop-in replacement of the nn.Linear layer in order to
+train 1-bit weights from scratch. Experimental results on language modeling
+show that BitNet achieves competitive performance while substantially reducing
+memory footprint and energy consumption, compared to state-of-the-art 8-bit
+quantization methods and FP16 Transformer baselines. Furthermore, BitNet
+exhibits a scaling law akin to full-precision Transformers, suggesting its
+potential for effective scaling to even larger language models while
+maintaining efficiency and performance benefits.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11453v1
+3,Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective,http://arxiv.org/pdf/2310.11451v1,"[arxiv.Result.Author('Ming Zhong'), arxiv.Result.Author('Chenxin An'), arxiv.Result.Author('Weizhu Chen'), arxiv.Result.Author('Jiawei Han'), arxiv.Result.Author('Pengcheng He')]",,2023-10-17 17:58:34+00:00,"Large Language Models (LLMs) inherently encode a wealth of knowledge within
+their parameters through pre-training on extensive corpora. While prior
+research has delved into operations on these parameters to manipulate the
+underlying implicit knowledge (encompassing detection, editing, and merging),
+there remains an ambiguous understanding regarding their transferability across
+models with varying scales. In this paper, we seek to empirically investigate
+knowledge transfer from larger to smaller models through a parametric
+perspective. To achieve this, we employ sensitivity-based techniques to extract
+and align knowledge-specific parameters between different LLMs. Moreover, the
+LoRA module is used as the intermediary mechanism for injecting the extracted
+knowledge into smaller models. Evaluations across four benchmarks validate the
+efficacy of our proposed method. Our findings highlight the critical factors
+contributing to the process of parametric knowledge transfer, underscoring the
+transferability of model parameters across LLMs of different scales. We release
+code and data at \url{https://github.com/maszhongming/ParaKnowTransfer}.",,cs.CL,"['cs.CL', 'cs.AI', 'cs.LG']",http://arxiv.org/abs/2310.11451v1
+4,4K4D: Real-Time 4D View Synthesis at 4K Resolution,http://arxiv.org/pdf/2310.11448v1,"[arxiv.Result.Author('Zhen Xu'), arxiv.Result.Author('Sida Peng'), arxiv.Result.Author('Haotong Lin'), arxiv.Result.Author('Guangzhao He'), arxiv.Result.Author('Jiaming Sun'), arxiv.Result.Author('Yujun Shen'), arxiv.Result.Author('Hujun Bao'), arxiv.Result.Author('Xiaowei Zhou')]",,2023-10-17 17:57:38+00:00,"This paper targets high-fidelity and real-time view synthesis of dynamic 3D
+scenes at 4K resolution. Recently, some methods on dynamic view synthesis have
+shown impressive rendering quality. However, their speed is still limited when
+rendering high-resolution images. To overcome this problem, we propose 4K4D, a
+4D point cloud representation that supports hardware rasterization and enables
+unprecedented rendering speed. Our representation is built on a 4D feature grid
+so that the points are naturally regularized and can be robustly optimized. In
+addition, we design a novel hybrid appearance model that significantly boosts
+the rendering quality while preserving efficiency. Moreover, we develop a
+differentiable depth peeling algorithm to effectively learn the proposed model
+from RGB videos. Experiments show that our representation can be rendered at
+over 400 FPS on the DNA-Rendering dataset at 1080p resolution and 80 FPS on the
+ENeRF-Outdoor dataset at 4K resolution using an RTX 4090 GPU, which is 30x
+faster than previous methods and achieves the state-of-the-art rendering
+quality. We will release the code for reproducibility.",,cs.CV,['cs.CV'],http://arxiv.org/abs/2310.11448v1
+5,Functional Invariants to Watermark Large Transformers,http://arxiv.org/pdf/2310.11446v1,"[arxiv.Result.Author('Fernandez Pierre'), arxiv.Result.Author('Couairon Guillaume'), arxiv.Result.Author('Furon Teddy'), arxiv.Result.Author('Douze Matthijs')]",,2023-10-17 17:56:18+00:00,"The rapid growth of transformer-based models increases the concerns about
+their integrity and ownership insurance. Watermarking addresses this issue by
+embedding a unique identifier into the model, while preserving its performance.
+However, most existing approaches require to optimize the weights to imprint
+the watermark signal, which is not suitable at scale due to the computational
+cost. This paper explores watermarks with virtually no computational cost,
+applicable to a non-blind white-box setting (assuming access to both the
+original and watermarked networks). They generate functionally equivalent
+copies by leveraging the models' invariance, via operations like dimension
+permutations or scaling/unscaling. This enables to watermark models without any
+change in their outputs and remains stealthy. Experiments demonstrate the
+effectiveness of the approach and its robustness against various model
+transformations (fine-tuning, quantization, pruning), making it a practical
+solution to protect the integrity of large models.",,cs.CR,"['cs.CR', 'cs.AI', 'cs.CL']",http://arxiv.org/abs/2310.11446v1
+6,"Trusted Provenance of Automated, Collaborative and Adaptive Data Processing Pipelines",http://arxiv.org/pdf/2310.11442v1,"[arxiv.Result.Author('Ludwig Stage'), arxiv.Result.Author('Dimka Karastoyanova')]",,2023-10-17 17:52:27+00:00,"To benefit from the abundance of data and the insights it brings data
+processing pipelines are being used in many areas of research and development
+in both industry and academia. One approach to automating data processing
+pipelines is the workflow technology, as it also supports collaborative,
+trial-and-error experimentation with the pipeline architecture in different
+application domains. In addition to the necessary flexibility that such
+pipelines need to possess, in collaborative settings cross-organisational
+interactions are plagued by lack of trust. While capturing provenance
+information related to the pipeline execution and the processed data is a first
+step towards enabling trusted collaborations, the current solutions do not
+allow for provenance of the change in the processing pipelines, where the
+subject of change can be made on any aspect of the workflow implementing the
+pipeline and on the data used while the pipeline is being executed. Therefore
+in this work we provide a solution architecture and a proof of concept
+implementation of a service, called Provenance Holder, which enable provenance
+of collaborative, adaptive data processing pipelines in a trusted manner. We
+also contribute a definition of a set of properties of such a service and
+identify future research directions.",,cs.CR,['cs.CR'],http://arxiv.org/abs/2310.11442v1
+7,Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V,http://arxiv.org/pdf/2310.11441v1,"[arxiv.Result.Author('Jianwei Yang'), arxiv.Result.Author('Hao Zhang'), arxiv.Result.Author('Feng Li'), arxiv.Result.Author('Xueyan Zou'), arxiv.Result.Author('Chunyuan Li'), arxiv.Result.Author('Jianfeng Gao')]",,2023-10-17 17:51:31+00:00,"We present Set-of-Mark (SoM), a new visual prompting method, to unleash the
+visual grounding abilities of large multimodal models (LMMs), such as GPT-4V.
+As illustrated in Fig. 1 (right), we employ off-the-shelf interactive
+segmentation models, such as SAM, to partition an image into regions at
+different levels of granularity, and overlay these regions with a set of marks
+e.g., alphanumerics, masks, boxes. Using the marked image as input, GPT-4V can
+answer the questions that require visual grounding. We perform a comprehensive
+empirical study to validate the effectiveness of SoM on a wide range of
+fine-grained vision and multimodal tasks. For example, our experiments show
+that GPT-4V with SoM outperforms the state-of-the-art fully-finetuned referring
+segmentation model on RefCOCOg in a zero-shot setting.",,cs.CV,"['cs.CV', 'cs.AI', 'cs.CL', 'cs.HC']",http://arxiv.org/abs/2310.11441v1
+8,EvalCrafter: Benchmarking and Evaluating Large Video Generation Models,http://arxiv.org/pdf/2310.11440v1,"[arxiv.Result.Author('Yaofang Liu'), arxiv.Result.Author('Xiaodong Cun'), arxiv.Result.Author('Xuebo Liu'), arxiv.Result.Author('Xintao Wang'), arxiv.Result.Author('Yong Zhang'), arxiv.Result.Author('Haoxin Chen'), arxiv.Result.Author('Yang Liu'), arxiv.Result.Author('Tieyong Zeng'), arxiv.Result.Author('Raymond Chan'), arxiv.Result.Author('Ying Shan')]",,2023-10-17 17:50:46+00:00,"The vision and language generative models have been overgrown in recent
+years. For video generation, various open-sourced models and public-available
+services are released for generating high-visual quality videos. However, these
+methods often use a few academic metrics, for example, FVD or IS, to evaluate
+the performance. We argue that it is hard to judge the large conditional
+generative models from the simple metrics since these models are often trained
+on very large datasets with multi-aspect abilities. Thus, we propose a new
+framework and pipeline to exhaustively evaluate the performance of the
+generated videos. To achieve this, we first conduct a new prompt list for
+text-to-video generation by analyzing the real-world prompt list with the help
+of the large language model. Then, we evaluate the state-of-the-art video
+generative models on our carefully designed benchmarks, in terms of visual
+qualities, content qualities, motion qualities, and text-caption alignment with
+around 18 objective metrics. To obtain the final leaderboard of the models, we
+also fit a series of coefficients to align the objective metrics to the users'
+opinions. Based on the proposed opinion alignment method, our final score shows
+a higher correlation than simply averaging the metrics, showing the
+effectiveness of the proposed evaluation method.",,cs.CV,['cs.CV'],http://arxiv.org/abs/2310.11440v1
+9,An empirical connection between line-emitting regions and X-rays heating the accretion disc in BH-LMXB MAXI J1820$+$070,http://arxiv.org/pdf/2310.11438v1,"[arxiv.Result.Author('B. E. Tetarenko'), arxiv.Result.Author('A. W. Shaw'), arxiv.Result.Author('P. A. Charles')]",,2023-10-17 17:50:00+00:00,"The recurring transient outbursts in low-mass X-ray binaries (LMXBs) provide
+ideal laboratories to study the accretion process. Unlike their supermassive
+relatives, LMXBs are far too small and distant to be imaged directly.
+Fortunately, phase-resolved spectroscopy can provide an alternative diagnostic
+to study their highly complex, time-dependent accretion discs. The primary
+spectral signature of LMXBs are strong, disc-formed emission lines detected at
+optical wavelengths. The shape, profile, and appearance/disappearance of these
+lines change throughout a binary orbit, and thus, can be used to trace how
+matter in these discs behaves and evolves over time. By combining a
+\textit{Swift} multi-wavelength monitoring campaign, phase-resolved
+spectroscopy from the Gran Telescopio Canarias (GTC) and Liverpool Telescope,
+and modern astrotomography techniques, we find a clear empirical connection
+between the line emitting regions and physical properties of the X-rays heating
+the disc in the black hole LMXB MAXI J1820+070 during its 2018 outburst. In
+this paper, we show how these empirical correlations can be used as an
+effective observational tool for understanding the geometry and structure of a
+LMXB accretion disc and present further evidence for an irradiation-driven
+warped accretion disc present in this system.",,astro-ph.HE,['astro-ph.HE'],http://arxiv.org/abs/2310.11438v1
+10,Identifying Interpretable Visual Features in Artificial and Biological Neural Systems,http://arxiv.org/pdf/2310.11431v1,"[arxiv.Result.Author('David Klindt'), arxiv.Result.Author('Sophia Sanborn'), arxiv.Result.Author('Francisco Acosta'), arxiv.Result.Author('Frédéric Poitevin'), arxiv.Result.Author('Nina Miolane')]",,2023-10-17 17:41:28+00:00,"Single neurons in neural networks are often ``interpretable'' in that they
+represent individual, intuitively meaningful features. However, many neurons
+exhibit $\textit{mixed selectivity}$, i.e., they represent multiple unrelated
+features. A recent hypothesis proposes that features in deep networks may be
+represented in $\textit{superposition}$, i.e., on non-orthogonal axes by
+multiple neurons, since the number of possible interpretable features in
+natural data is generally larger than the number of neurons in a given network.
+Accordingly, we should be able to find meaningful directions in activation
+space that are not aligned with individual neurons. Here, we propose (1) an
+automated method for quantifying visual interpretability that is validated
+against a large database of human psychophysics judgments of neuron
+interpretability, and (2) an approach for finding meaningful directions in
+network activation space. We leverage these methods to discover directions in
+convolutional neural networks that are more intuitively meaningful than
+individual neurons, as we confirm and investigate in a series of analyses.
+Moreover, we apply the same method to two recent datasets of visual neural
+responses in the brain and find that our conclusions largely transfer to real
+neural data, suggesting that superposition might be deployed by the brain. This
+also provides a link with disentanglement and raises fundamental questions
+about robust, efficient and factorized representations in both artificial and
+biological neural systems.",,stat.ML,"['stat.ML', 'cs.LG']",http://arxiv.org/abs/2310.11431v1
+11,An Empirical Study of Translation Hypothesis Ensembling with Large Language Models,http://arxiv.org/pdf/2310.11430v1,"[arxiv.Result.Author('António Farinhas'), arxiv.Result.Author('José G. C. de Souza'), arxiv.Result.Author('André F. T. Martins')]",,2023-10-17 17:40:21+00:00,"Large language models (LLMs) are becoming a one-fits-many solution, but they
+sometimes hallucinate or produce unreliable output. In this paper, we
+investigate how hypothesis ensembling can improve the quality of the generated
+text for the specific problem of LLM-based machine translation. We experiment
+with several techniques for ensembling hypotheses produced by LLMs such as
+ChatGPT, LLaMA, and Alpaca. We provide a comprehensive study along multiple
+dimensions, including the method to generate hypotheses (multiple prompts,
+temperature-based sampling, and beam search) and the strategy to produce the
+final translation (instruction-based, quality-based reranking, and minimum
+Bayes risk (MBR) decoding). Our results show that MBR decoding is a very
+effective method, that translation quality can be improved using a small number
+of samples, and that instruction tuning has a strong impact on the relation
+between the diversity of the hypotheses and the sampling temperature.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11430v1
+12,Butterfly Effects of SGD Noise: Error Amplification in Behavior Cloning and Autoregression,http://arxiv.org/pdf/2310.11428v1,"[arxiv.Result.Author('Adam Block'), arxiv.Result.Author('Dylan J. Foster'), arxiv.Result.Author('Akshay Krishnamurthy'), arxiv.Result.Author('Max Simchowitz'), arxiv.Result.Author('Cyril Zhang')]",,2023-10-17 17:39:40+00:00,"This work studies training instabilities of behavior cloning with deep neural
+networks. We observe that minibatch SGD updates to the policy network during
+training result in sharp oscillations in long-horizon rewards, despite
+negligibly affecting the behavior cloning loss. We empirically disentangle the
+statistical and computational causes of these oscillations, and find them to
+stem from the chaotic propagation of minibatch SGD noise through unstable
+closed-loop dynamics. While SGD noise is benign in the single-step action
+prediction objective, it results in catastrophic error accumulation over long
+horizons, an effect we term gradient variance amplification (GVA). We show that
+many standard mitigation techniques do not alleviate GVA, but find an
+exponential moving average (EMA) of iterates to be surprisingly effective at
+doing so. We illustrate the generality of this phenomenon by showing the
+existence of GVA and its amelioration by EMA in both continuous control and
+autoregressive language generation. Finally, we provide theoretical vignettes
+that highlight the benefits of EMA in alleviating GVA and shed light on the
+extent to which classical convex models can help in understanding the benefits
+of iterate averaging in deep learning.",,cs.LG,"['cs.LG', 'math.OC', 'stat.ML']",http://arxiv.org/abs/2310.11428v1
+13,Predicting polymerization reactions via transfer learning using chemical language models,http://arxiv.org/pdf/2310.11423v1,"[arxiv.Result.Author('Brenda S. Ferrari'), arxiv.Result.Author('Matteo Manica'), arxiv.Result.Author('Ronaldo Giro'), arxiv.Result.Author('Teodoro Laino'), arxiv.Result.Author('Mathias B. Steiner')]",,2023-10-17 17:31:52+00:00,"Polymers are candidate materials for a wide range of sustainability
+applications such as carbon capture and energy storage. However, computational
+polymer discovery lacks automated analysis of reaction pathways and stability
+assessment through retro-synthesis. Here, we report the first extension of
+transformer-based language models to polymerization reactions for both forward
+and retrosynthesis tasks. To that end, we have curated a polymerization dataset
+for vinyl polymers covering reactions and retrosynthesis for representative
+homo-polymers and co-polymers. Overall, we obtain a forward model Top-4
+accuracy of 80% and a backward model Top-4 accuracy of 60%. We further analyze
+the model performance with representative polymerization and retro-synthesis
+examples and evaluate its prediction quality from a materials science
+perspective.",,physics.chem-ph,"['physics.chem-ph', 'cond-mat.mtrl-sci']",http://arxiv.org/abs/2310.11423v1
+14,Characters of the unitriangular group and the Mackey method,http://arxiv.org/pdf/2310.11421v1,"[arxiv.Result.Author('Mikhail Ignatev'), arxiv.Result.Author('Mikhail Venchakov')]",,2023-10-17 17:29:44+00:00,"Let $U$ be the unitriangular group over a finite field. We consider an
+interesting class of irreducible complex characters of $U$, so-called
+characters of depth 2. This is a next natural step after characters of maximal
+and submaximal dimension, whose description is already known. We explicitly
+describe the support of a character of depth 2 by a system of defining
+algebraic equations. After that, we calculate the value of such a character on
+an element from the support. The main technical tool used in the proofs is the
+Mackey little group method for semidirect products.",,math.RT,"['math.RT', 'math.GR', '20C15, 17B08, 20D15']",http://arxiv.org/abs/2310.11421v1
+15,Loss features in ultracold $^{162}$Dy gases: two- versus three-body processes,http://arxiv.org/pdf/2310.11418v1,"[arxiv.Result.Author('Maxime Lecomte'), arxiv.Result.Author('Alexandre Journeaux'), arxiv.Result.Author('Loan Renaud'), arxiv.Result.Author('Jean Dalibard'), arxiv.Result.Author('Raphael Lopes')]",,2023-10-17 17:26:49+00:00,"Dipolar gases like erbium and dysprosium have a dense spectrum of resonant
+loss features associated with their strong anisotropic interaction potential.
+These resonances display various behaviours with density and temperature,
+implying diverse microscopic properties. Here, we quantitatively investigate
+the low-field ($B < 6\,\text{G}$) loss features in ultracold thermal samples of
+$^{162}$Dy, revealing two- and three-body dominated loss processes. We
+investigate their temperature dependence and detect a feature compatible with a
+$d$-wave Fano-Feshbach resonance, which has not been observed before. We also
+analyse the expansion of the dipolar Bose-Einstein condensate as a function of
+the magnetic field and interpret the changes in size close to the resonances
+with a variation in the scattering length.",,cond-mat.quant-gas,['cond-mat.quant-gas'],http://arxiv.org/abs/2310.11418v1
+16,Stellar mass-metallicity relation throughout the large-scale of the Universe: CAVITY mother sample,http://arxiv.org/pdf/2310.11412v1,"[arxiv.Result.Author('Jesús Domínguez-Gómez'), arxiv.Result.Author('Isabel Pérez'), arxiv.Result.Author('Tomás Ruiz-Lara'), arxiv.Result.Author('Reynier F. Peletier'), arxiv.Result.Author('Patricia Sánchez-Blázquez'), arxiv.Result.Author('Ute Lisenfeld'), arxiv.Result.Author('Bahar Bidaran'), arxiv.Result.Author('Jesús Falcón-Barroso'), arxiv.Result.Author('Manuel Alcázar-Laynez'), arxiv.Result.Author('María Argudo-Fernández'), arxiv.Result.Author('Guillermo Blázquez-Calero'), arxiv.Result.Author('Hélène Courtois'), arxiv.Result.Author('Salvador Duarte Puertas'), arxiv.Result.Author('Daniel Espada'), arxiv.Result.Author('Estrella Florido'), arxiv.Result.Author('Rubén García-Benito'), arxiv.Result.Author('Andoni Jiménez'), arxiv.Result.Author('Kathryn Kreckel'), arxiv.Result.Author('Mónica Relaño'), arxiv.Result.Author('Laura Sánchez-Menguiano'), arxiv.Result.Author('Thijs van der Hulst'), arxiv.Result.Author('Rien van de Weygaert'), arxiv.Result.Author('Simon Verley'), arxiv.Result.Author('Almudena Zurita')]",,2023-10-17 17:20:43+00:00,"Void galaxies are essential to understand the physical processes that drive
+galaxy evolution as they are less affected by external factors than galaxies in
+denser environments, i.e. filaments, walls, and clusters. The stellar
+metallicity of a galaxy traces the accumulated fossil record of star formation
+through its entire life. Comparing the stellar metallicity of galaxies in
+various environments, including voids, filaments, walls, and clusters, can
+provide valuable insights into how the large-scale environment impacts galaxy
+chemical evolution. We present the first comparison of the total stellar mass
+vs. central stellar metallicity relation between galaxies in voids, filaments,
+walls, and clusters with different star formation history (SFH) types,
+morphologies, and colours, for stellar masses between 10^8.0 to 10^11.5 solar
+masses and redshift 0.01 < z < 0.05. We aim to better understand how the
+large-scale structure affects galaxy evolution by studying the stellar
+mass-metallicity relation of thousands of galaxies, which allows us to make a
+statistically sound comparison between galaxies in voids, filaments, walls, and
+clusters. We apply non-parametric full spectral fitting techniques (pPXF and
+STECKMAP) to 10807 spectra from the SDSS-DR7 (987 in voids, 6463 in filaments
+and walls, and 3357 in clusters) and derive their central mass-weighted average
+stellar metallicity. We find that galaxies in voids have on average slightly
+lower stellar metallicities than galaxies in filaments and walls (by 0.1 dex),
+and much lower than galaxies in clusters (by 0.4 dex). These differences are
+more significant for low-mass (10^9.25) than for high-mass galaxies, for
+long-timescale SFH (LT-SFH, extended along time) galaxies than for
+short-timescale SFHs (ST-SFH, concentrated at early times) galaxies, for spiral
+than for elliptical galaxies, and for blue than for red galaxies.",,astro-ph.GA,"['astro-ph.GA', 'astro-ph.CO']",http://arxiv.org/abs/2310.11412v1
+17,High kinetic inductance NbTiN films for quantum limited travelling wave parametric amplifiers,http://arxiv.org/pdf/2310.11410v1,"[arxiv.Result.Author('Felix Ahrens'), arxiv.Result.Author('Matteo Borghesi'), arxiv.Result.Author('Paolo Falferi'), arxiv.Result.Author('Luca Fasolo'), arxiv.Result.Author('Marco Faverzani'), arxiv.Result.Author('Elena Ferri'), arxiv.Result.Author('Andrea Giachero'), arxiv.Result.Author('Danilo Labranca'), arxiv.Result.Author('Federica Mantegazzini'), arxiv.Result.Author('Benno Margesin'), arxiv.Result.Author('Renato Mezzena'), arxiv.Result.Author('Roberto Moretti'), arxiv.Result.Author('Angelo Nucciotti'), arxiv.Result.Author('Luca Origo'), arxiv.Result.Author('Andrea Vinante'), arxiv.Result.Author('Mario Zannoni')]",,2023-10-17 17:18:05+00:00,"A wide-bandwidth and low-noise amplification chain in the microwave regime is
+crucial for the efficient read-out of quantum systems based on superconducting
+detectors, such as Microwave Kinetic Inductance Detectors (MKIDs), Transition
+Edge Sensors (TESs), Magnetic Microcalorimeters (MMCs), and RF cavities, as
+well as qubits. Kinetic Inductance Travelling Wave Parametric Amplifiers
+(KI-TWPAs) operated in a three-wave mixing fashion have demonstrated
+exceptional dynamic range and low-noise performance, approaching the quantum
+limit. These amplifiers can be fabricated using a single layer of a high
+kinetic inductance film as weakly dispersive artificial transmission lines,
+with the ability to control the phase-matched bandwidth through dispersion
+engineering. In this study, we present the optimisation of the rf
+sputter-deposition process of NbTiN films using a Nb80%T20 target, with the
+goal of achieving precise control over film characteristics, resulting in high
+kinetic inductance while maintaining a high transition temperature. The
+parameter landscape related to the different sputtering conditions, such as
+pressure, power, and nitrogen flow, has been explored and the film thickness
+has been used as a fine-tuning parameter to adjust the properties of the final
+NbTiN films used for the fabrication of KI-TWPAs. As a final result, we have
+obtained a NbTiN film with a kinetic inductance of 8.5 pH/sq which we have
+exploited to fabricate KI-TWPA prototype devices, showing promising
+amplification performance.",,physics.app-ph,"['physics.app-ph', 'quant-ph']",http://arxiv.org/abs/2310.11410v1
+18,Evaluating LLMs for Privilege-Escalation Scenarios,http://arxiv.org/pdf/2310.11409v1,"[arxiv.Result.Author('Andreas Happe'), arxiv.Result.Author('Aaron Kaplan'), arxiv.Result.Author('Jürgen Cito')]",,2023-10-17 17:15:41+00:00,"Penetration testing, an essential component of cybersecurity, allows
+organizations to proactively identify and remediate vulnerabilities in their
+systems, thus bolstering their defense mechanisms against potential
+cyberattacks. One recent advancement in the realm of penetration testing is the
+utilization of Language Models (LLMs). We explore the intersection of LLMs and
+penetration testing to gain insight into their capabilities and challenges in
+the context of privilige escalation. We create an automated Linux
+privilege-escalation benchmark utilizing local virtual machines. We introduce
+an LLM-guided privilege-escalation tool designed for evaluating different LLMs
+and prompt strategies against our benchmark. We analyze the impact of different
+prompt designs, the benefits of in-context learning, and the advantages of
+offering high-level guidance to LLMs. We discuss challenging areas for LLMs,
+including maintaining focus during testing, coping with errors, and finally
+comparing them with both stochastic parrots as well as with human hackers.",,cs.CR,"['cs.CR', 'cs.AI']",http://arxiv.org/abs/2310.11409v1
+19,Group-blind optimal transport to group parity and its constrained variants,http://arxiv.org/pdf/2310.11407v1,"[arxiv.Result.Author('Quan Zhou'), arxiv.Result.Author('Jakub Marecek')]",,2023-10-17 17:14:07+00:00,"Fairness holds a pivotal role in the realm of machine learning, particularly
+when it comes to addressing groups categorised by sensitive attributes, e.g.,
+gender, race. Prevailing algorithms in fair learning predominantly hinge on
+accessibility or estimations of these sensitive attributes, at least in the
+training process. We design a single group-blind projection map that aligns the
+feature distributions of both groups in the source data, achieving
+(demographic) group parity, without requiring values of the protected attribute
+for individual samples in the computation of the map, as well as its use.
+Instead, our approach utilises the feature distributions of the privileged and
+unprivileged groups in a boarder population and the essential assumption that
+the source data are unbiased representation of the population. We present
+numerical results on synthetic data and real data.",,cs.LG,"['cs.LG', 'math.OC']",http://arxiv.org/abs/2310.11407v1
+20,Enhancing Group Fairness in Online Settings Using Oblique Decision Forests,http://arxiv.org/pdf/2310.11401v1,"[arxiv.Result.Author('Somnath Basu Roy Chowdhury'), arxiv.Result.Author('Nicholas Monath'), arxiv.Result.Author('Ahmad Beirami'), arxiv.Result.Author('Rahul Kidambi'), arxiv.Result.Author('Avinava Dubey'), arxiv.Result.Author('Amr Ahmed'), arxiv.Result.Author('Snigdha Chaturvedi')]",,2023-10-17 17:10:56+00:00,"Fairness, especially group fairness, is an important consideration in the
+context of machine learning systems. The most commonly adopted group
+fairness-enhancing techniques are in-processing methods that rely on a mixture
+of a fairness objective (e.g., demographic parity) and a task-specific
+objective (e.g., cross-entropy) during the training process. However, when data
+arrives in an online fashion -- one instance at a time -- optimizing such
+fairness objectives poses several challenges. In particular, group fairness
+objectives are defined using expectations of predictions across different
+demographic groups. In the online setting, where the algorithm has access to a
+single instance at a time, estimating the group fairness objective requires
+additional storage and significantly more computation (e.g., forward/backward
+passes) than the task-specific objective at every time step. In this paper, we
+propose Aranyani, an ensemble of oblique decision trees, to make fair decisions
+in online settings. The hierarchical tree structure of Aranyani enables
+parameter isolation and allows us to efficiently compute the fairness gradients
+using aggregate statistics of previous decisions, eliminating the need for
+additional storage and forward/backward passes. We also present an efficient
+framework to train Aranyani and theoretically analyze several of its
+properties. We conduct empirical evaluations on 5 publicly available benchmarks
+(including vision and language datasets) to show that Aranyani achieves a
+better accuracy-fairness trade-off compared to baseline approaches.",,cs.LG,['cs.LG'],http://arxiv.org/abs/2310.11401v1
+21,Neural Attention: Enhancing QKV Calculation in Self-Attention Mechanism with Neural Networks,http://arxiv.org/pdf/2310.11398v1,[arxiv.Result.Author('Muhan Zhang')],,2023-10-17 17:06:26+00:00,"In the realm of deep learning, the self-attention mechanism has substantiated
+its pivotal role across a myriad of tasks, encompassing natural language
+processing and computer vision. Despite achieving success across diverse
+applications, the traditional self-attention mechanism primarily leverages
+linear transformations for the computation of query, key, and value (QKV),
+which may not invariably be the optimal choice under specific circumstances.
+This paper probes into a novel methodology for QKV computation-implementing a
+specially-designed neural network structure for the calculation. Utilizing a
+modified Marian model, we conducted experiments on the IWSLT 2017
+German-English translation task dataset and juxtaposed our method with the
+conventional approach. The experimental results unveil a significant
+enhancement in BLEU scores with our method. Furthermore, our approach also
+manifested superiority when training the Roberta model with the Wikitext-103
+dataset, reflecting a notable reduction in model perplexity compared to its
+original counterpart. These experimental outcomes not only validate the
+efficacy of our method but also reveal the immense potential in optimizing the
+self-attention mechanism through neural network-based QKV computation, paving
+the way for future research and practical applications. The source code and
+implementation details for our proposed method can be accessed at
+https://github.com/ocislyjrti/NeuralAttention.",,cs.CL,"['cs.CL', 'cs.AI']",http://arxiv.org/abs/2310.11398v1
+22,"Last One Standing: A Comparative Analysis of Security and Privacy of Soft Prompt Tuning, LoRA, and In-Context Learning",http://arxiv.org/pdf/2310.11397v1,"[arxiv.Result.Author('Rui Wen'), arxiv.Result.Author('Tianhao Wang'), arxiv.Result.Author('Michael Backes'), arxiv.Result.Author('Yang Zhang'), arxiv.Result.Author('Ahmed Salem')]",,2023-10-17 17:03:00+00:00,"Large Language Models (LLMs) are powerful tools for natural language
+processing, enabling novel applications and user experiences. However, to
+achieve optimal performance, LLMs often require adaptation with private data,
+which poses privacy and security challenges. Several techniques have been
+proposed to adapt LLMs with private data, such as Low-Rank Adaptation (LoRA),
+Soft Prompt Tuning (SPT), and In-Context Learning (ICL), but their comparative
+privacy and security properties have not been systematically investigated. In
+this work, we fill this gap by evaluating the robustness of LoRA, SPT, and ICL
+against three types of well-established attacks: membership inference, which
+exposes data leakage (privacy); backdoor, which injects malicious behavior
+(security); and model stealing, which can violate intellectual property
+(privacy and security). Our results show that there is no silver bullet for
+privacy and security in LLM adaptation and each technique has different
+strengths and weaknesses.",,cs.CR,"['cs.CR', 'cs.LG']",http://arxiv.org/abs/2310.11397v1
+23,Quantum Financial Modeling on NISQ Hardware: Random Walks using Approximate Quantum Counting,http://arxiv.org/pdf/2310.11394v1,[arxiv.Result.Author('Dominic Widdows')],,2023-10-17 16:54:31+00:00,"Quantum computers are expected to contribute more efficient and accurate ways
+of modeling economic processes. Quantum hardware is currently available at a
+relatively small scale, but effective algorithms are limited by the number of
+logic gates that can be used, before noise from gate inaccuracies tends to
+dominate results. Some theoretical algorithms that have been proposed and
+studied for years do not perform well yet on quantum hardware in practice. This
+encourages the development of suitable alternative algorithms that play similar
+roles in limited contexts.
+  This paper implements this strategy in the case of quantum counting, which is
+used as a component for keeping track of position in a quantum walk, which is
+used as a model for simulating asset prices over time. We introduce quantum
+approximate counting circuits that use far fewer 2-qubit entangling gates than
+traditional quantum counting that relies on binary positional encoding. The
+robustness of these circuits to noise is demonstrated.
+  While this paper is mainly about robust simplified quantum circuit designs,
+we compare some aspects of the results with price change distributions from
+stock indices, and compare the behavior of circuits with and without
+mid-measurement to trends in the housing market.",,quant-ph,"['quant-ph', 'cs.CE']",http://arxiv.org/abs/2310.11394v1
+24,Towards Automatic Satellite Images Captions Generation Using Large Language Models,http://arxiv.org/pdf/2310.11392v1,"[arxiv.Result.Author('Yingxu He'), arxiv.Result.Author('Qiqi Sun')]",,2023-10-17 16:45:47+00:00,"Automatic image captioning is a promising technique for conveying visual
+information using natural language. It can benefit various tasks in satellite
+remote sensing, such as environmental monitoring, resource management, disaster
+management, etc. However, one of the main challenges in this domain is the lack
+of large-scale image-caption datasets, as they require a lot of human expertise
+and effort to create. Recent research on large language models (LLMs) has
+demonstrated their impressive performance in natural language understanding and
+generation tasks. Nonetheless, most of them cannot handle images (GPT-3.5,
+Falcon, Claude, etc.), while conventional captioning models pre-trained on
+general ground-view images often fail to produce detailed and accurate captions
+for aerial images (BLIP, GIT, CM3, CM3Leon, etc.). To address this problem, we
+propose a novel approach: Automatic Remote Sensing Image Captioning (ARSIC) to
+automatically collect captions for remote sensing images by guiding LLMs to
+describe their object annotations. We also present a benchmark model that
+adapts the pre-trained generative image2text model (GIT) to generate
+high-quality captions for remote-sensing images. Our evaluation demonstrates
+the effectiveness of our approach for collecting captions for remote sensing
+images.",,cs.CV,"['cs.CV', 'cs.AI']",http://arxiv.org/abs/2310.11392v1
+25,VaR\ and CVaR Estimation in a Markov Cost Process: Lower and Upper Bounds,http://arxiv.org/pdf/2310.11389v1,"[arxiv.Result.Author('Sanjay Bhat'), arxiv.Result.Author('Prashanth L. A.'), arxiv.Result.Author('Gugan Thoppe')]",,2023-10-17 16:35:39+00:00,"We tackle the problem of estimating the Value-at-Risk (VaR) and the
+Conditional Value-at-Risk (CVaR) of the infinite-horizon discounted cost within
+a Markov cost process. First, we derive a minimax lower bound of
+$\Omega(1/\sqrt{n})$ that holds both in an expected and in a probabilistic
+sense. Then, using a finite-horizon truncation scheme, we derive an upper bound
+for the error in CVaR estimation, which matches our lower bound up to constant
+factors. Finally, we discuss an extension of our estimation scheme that covers
+more general risk measures satisfying a certain continuity criterion, e.g.,
+spectral risk measures, utility-based shortfall risk. To the best of our
+knowledge, our work is the first to provide lower and upper bounds on the
+estimation error for any risk measure within Markovian settings. We remark that
+our lower bounds also extend to the infinite-horizon discounted costs' mean.
+Even in that case, our result $\Omega(1/\sqrt{n}) $ improves upon the existing
+result $\Omega(1/n)$[13].",,cs.LG,"['cs.LG', 'stat.ML']",http://arxiv.org/abs/2310.11389v1
+26,Towards Operationalizing Social Bonding in Human-Robot Dyads,http://arxiv.org/pdf/2310.11386v1,[arxiv.Result.Author('Imran Khan')],,2023-10-17 16:35:03+00:00,"With momentum increasing in the use of social robots as long-term assistive
+and collaborative partners, humans developing social bonds with these
+artificial agents appears to be inevitable. In human-human dyads, social
+bonding plays a powerful role in regulating behaviours, emotions, and even
+health. If this is to extend to human-robot dyads, the phenomenology of such
+relationships (including their emergence and stability) must be better
+understood. In this paper, we discuss potential approaches towards
+operationalizing the phenomenon of social bonding between human-robot dyads. We
+will discuss a number of biobehavioural proxies of social bonding, moving away
+from existing approaches that use subjective, psychological measures, and
+instead grounding our approach in some of the evolutionary, neurobiological and
+physiological correlates of social bond formation in natural systems: (a)
+reductions in physiological stress (the ''social buffering'' phenomenon), (b)
+narrowing of spatial proximity between dyads, and (c) inter-dyad behavioural
+synchrony. We provide relevant evolutionary support for each proposed
+component, with suggestions and considerations for how they can be recorded in
+(real-time) human-robot interaction scenarios. With this, we aim to inspire
+more robust operationalisation of ''social bonding'' between human and
+artificial (robotic) agents.",,cs.RO,"['cs.RO', 'cs.HC']",http://arxiv.org/abs/2310.11386v1
+27,A voxel-level approach to brain age prediction: A method to assess regional brain aging,http://arxiv.org/pdf/2310.11385v1,"[arxiv.Result.Author('Neha Gianchandani'), arxiv.Result.Author('Mahsa Dibaji'), arxiv.Result.Author('Johanna Ospel'), arxiv.Result.Author('Fernando Vega'), arxiv.Result.Author('Mariana Bento'), arxiv.Result.Author('M. Ethan MacDonald'), arxiv.Result.Author('Roberto Souza')]",,2023-10-17 16:32:38+00:00,"Brain aging is a regional phenomenon, a facet that remains relatively
+under-explored within the realm of brain age prediction research using machine
+learning methods. Voxel-level predictions can provide localized brain age
+estimates that can provide granular insights into the regional aging processes.
+This is essential to understand the differences in aging trajectories in
+healthy versus diseased subjects. In this work, a deep learning-based multitask
+model is proposed for voxel-level brain age prediction from T1-weighted
+magnetic resonance images. The proposed model outperforms the models existing
+in the literature and yields valuable clinical insights when applied to both
+healthy and diseased populations. Regional analysis is performed on the
+voxel-level brain age predictions to understand aging trajectories of known
+anatomical regions in the brain and show that there exist disparities in
+regional aging trajectories of healthy subjects compared to ones with
+underlying neurological disorders such as Dementia and more specifically,
+Alzheimer's disease. Our code is available at
+https://github.com/nehagianchandani/Voxel-level-brain-age-prediction.",,cs.CV,['cs.CV'],http://arxiv.org/abs/2310.11385v1
+28,Condensate droplet roaming on nanostructured superhydrophobic surfaces,http://arxiv.org/pdf/2310.11382v1,"[arxiv.Result.Author('Cheuk Wing Edmond Lam'), arxiv.Result.Author('Kartik Regulagadda'), arxiv.Result.Author('Matteo Donati'), arxiv.Result.Author('Abinash Tripathy'), arxiv.Result.Author('Gopal Chandra Pal'), arxiv.Result.Author('Chander Shekhar Sharma'), arxiv.Result.Author('Athanasios Milionis'), arxiv.Result.Author('Dimos Poulikakos')]",,2023-10-17 16:30:57+00:00,"Jumping of coalescing condensate droplets from superhydrophobic surfaces is
+an interesting phenomenon which yields marked heat transfer enhancement over
+the more explored gravity-driven droplet removal mode in surface condensation,
+a phase change process of central interest to applications ranging from energy
+to water harvesting. However, when condensate microdroplets coalesce, they can
+also spontaneously propel themselves omnidirectionally on the surface
+independent of gravity and grow by feeding from droplets they sweep along the
+way. Here we observe and explain the physics behind this phenomenon of roaming
+of coalescing condensate microdroplets on solely nanostructured
+superhydrophobic surfaces, where the microdroplets are orders of magnitude
+larger than the underlaying surface nanotexture. We quantify and show that it
+is the inherent asymmetries in droplet adhesion during condensation, arising
+from the stochastic nature of nucleation within the nanostructures, that
+generates the tangential momentum driving the roaming motion. Subsequent
+dewetting during this conversion initiates a vivid roaming and successive
+coalescence process, preventing condensate flooding of the surface, and
+enhancing surface renewal. Finally, we show that the more efficient conversion
+process of roaming from excess surface energy to kinetic energy results in
+significantly improved heat transfer efficiency over condensate droplet
+jumping, the mechanism currently understood as maximum.",,physics.flu-dyn,['physics.flu-dyn'],http://arxiv.org/abs/2310.11382v1
