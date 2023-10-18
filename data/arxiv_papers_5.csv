@@ -1,4 +1,4 @@
-,Title,PDF URL,Author,DOI,Published Date,Summary
+,Title,PDF URL,Author,DOI,Published Date,Summary,Journal Ref,Primary Category,Category,Entry ID
 0,DialogueLLM: Context and Emotion Knowledge-Tuned LLaMA Models for Emotion Recognition in Conversations,http://arxiv.org/pdf/2310.11374v1,"[arxiv.Result.Author('Yazhou Zhang'), arxiv.Result.Author('Mengyao Wang'), arxiv.Result.Author('Prayag Tiwari'), arxiv.Result.Author('Qiuchi Li'), arxiv.Result.Author('Benyou Wang'), arxiv.Result.Author('Jing Qin')]",,2023-10-17 16:15:34+00:00,"Large language models (LLMs) and their variants have shown extraordinary
 efficacy across numerous downstream natural language processing (NLP) tasks,
 which has presented a new vision for the development of NLP. Despite their
@@ -14,7 +14,7 @@ construct high-quality instructions. We offer a comprehensive evaluation of our
 proposed model on three benchmarking emotion recognition in conversations (ERC)
 datasets and compare the results against the SOTA baselines and other SOTA
 LLMs. Additionally, DialogueLLM-7B can be easily trained using LoRA on a 40GB
-A100 GPU in 5 hours, facilitating reproducibility for other researchers."
+A100 GPU in 5 hours, facilitating reproducibility for other researchers.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11374v1
 1,VECHR: A Dataset for Explainable and Robust Classification of Vulnerability Type in the European Court of Human Rights,http://arxiv.org/pdf/2310.11368v1,"[arxiv.Result.Author('Shanshan Xu'), arxiv.Result.Author('Leon Staufer'), arxiv.Result.Author('Santosh T. Y. S. S'), arxiv.Result.Author('Oana Ichim'), arxiv.Result.Author('Corina Heri'), arxiv.Result.Author('Matthias Grabmair')]",,2023-10-17 16:05:52+00:00,"Recognizing vulnerability is crucial for understanding and implementing
 targeted support to empower individuals in need. This is especially important
 at the European Court of Human Rights (ECtHR), where the court adapts
@@ -30,7 +30,7 @@ limited agreement between models and experts. Further, we analyze the
 robustness of these models in dealing with out-of-domain (OOD) data and observe
 overall limited performance. Our dataset poses unique challenges offering
 significant room for improvement regarding performance, explainability, and
-robustness."
+robustness.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11368v1
 2,Utilizing Weak Supervision To Generate Indonesian Conservation Dataset,http://arxiv.org/pdf/2310.11258v1,"[arxiv.Result.Author('Mega Fransiska'), arxiv.Result.Author('Diah Pitaloka'), arxiv.Result.Author('Saripudin'), arxiv.Result.Author('Satrio Putra'), arxiv.Result.Author('Lintang Sutawika')]",,2023-10-17 13:23:18+00:00,"Weak supervision has emerged as a promising approach for rapid and
 large-scale dataset creation in response to the increasing demand for
 accelerated NLP development. By leveraging labeling functions, weak supervision
@@ -43,7 +43,7 @@ pretrained language models. These baseline results demonstrate test
 performances of 59.79% accuracy and 55.72% F1-score for sentiment
 classification, 66.87% F1-score-macro, 71.5% F1-score-micro, and 83.67% ROC-AUC
 for multi-class classification. Additionally, we release the datasets and
-labeling functions used in this work for further research and exploration."
+labeling functions used in this work for further research and exploration.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11258v1
 3,Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations,http://arxiv.org/pdf/2310.11207v1,"[arxiv.Result.Author('Shiyuan Huang'), arxiv.Result.Author('Siddarth Mamidanna'), arxiv.Result.Author('Shreedhar Jangam'), arxiv.Result.Author('Yilun Zhou'), arxiv.Result.Author('Leilani H. Gilpin')]",,2023-10-17 12:34:32+00:00,"Large language models (LLMs) such as ChatGPT have demonstrated superior
 performance on a variety of natural language processing (NLP) tasks including
 sentiment analysis, mathematical reasoning and summarization. Furthermore,
@@ -65,7 +65,7 @@ are quite different from them according to various agreement metrics, meanwhile
 being much cheaper to produce (as they are generated along with the
 prediction). In addition, we identified several interesting characteristics of
 them, which prompt us to rethink many current model interpretability practices
-in the era of ChatGPT(-like) LLMs."
+in the era of ChatGPT(-like) LLMs.",,cs.CL,"['cs.CL', 'cs.LG']",http://arxiv.org/abs/2310.11207v1
 4,ViSoBERT: A Pre-Trained Language Model for Vietnamese Social Media Text Processing,http://arxiv.org/pdf/2310.11166v1,"[arxiv.Result.Author('Quoc-Nam Nguyen'), arxiv.Result.Author('Thang Chau Phan'), arxiv.Result.Author('Duc-Vu Nguyen'), arxiv.Result.Author('Kiet Van Nguyen')]",,2023-10-17 11:34:50+00:00,"English and Chinese, known as resource-rich languages, have witnessed the
 strong development of transformer-based language models for natural language
 processing tasks. Although Vietnam has approximately 100M people speaking
@@ -83,4 +83,4 @@ Our experiments demonstrate that ViSoBERT, with far fewer parameters, surpasses
 the previous state-of-the-art models on multiple Vietnamese social media tasks.
 Our ViSoBERT model is
 available\footnote{\url{https://huggingface.co/uitnlp/visobert}} only for
-research purposes."
+research purposes.",,cs.CL,['cs.CL'],http://arxiv.org/abs/2310.11166v1
