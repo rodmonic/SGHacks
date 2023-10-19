@@ -1,0 +1,664 @@
+,Filename,Summary,Title,PDF URL,Author,DOI,Published Date,Abstract,Journal Ref,Primary Category,Category,Entry ID,_merge,Dominant_Topic,Perc_Contribution,Topic_Keywords,0
+0,1809.09190v1.pdf, in this paper we formulate audio play hot n cold by katy perry set an alarm for 5 pm as a sequencetosequence problem with the widespread adoption of smart devices like google amazon apple microsoft and microsoft the accuracy of asr systems has worsened over the years 6 errors in recognition of spoken language systems worsen 7 weusethewordsemanticstorefertoall three ofdotypes,From Audio to Semantics: Approaches to end-to-end spoken language understanding,http://arxiv.org/pdf/1809.09190v1,"[arxiv.Result.Author('Parisa Haghani'), arxiv.Result.Author('Arun Narayanan'), arxiv.Result.Author('Michiel Bacchiani'), arxiv.Result.Author('Galen Chuang'), arxiv.Result.Author('Neeraj Gaur'), arxiv.Result.Author('Pedro Moreno'), arxiv.Result.Author('Rohit Prabhavalkar'), arxiv.Result.Author('Zhongdi Qu'), arxiv.Result.Author('Austin Waters')]",,2018-09-24 19:46:24+00:00,"Conventional spoken language understanding systems consist of two main
+components: an automatic speech recognition module that converts audio to a
+transcript, and a natural language understanding module that transforms the
+resulting text (or top N hypotheses) into a set of domains, intents, and
+arguments. These modules are typically optimized independently. In this paper,
+we formulate audio to semantic understanding as a sequence-to-sequence problem
+[1]. We propose and compare various encoder-decoder based approaches that
+optimize both modules jointly, in an end-to-end manner. Evaluations on a
+real-world task show that 1) having an intermediate text representation is
+crucial for the quality of the predicted semantics, especially the intent
+arguments and 2) jointly optimizing the full system improves overall accuracy
+of prediction. Compared to independently trained models, our best jointly
+trained model achieves similar domain and intent prediction F1 scores, but
+improves argument word error rate by 18% relative.",,eess.AS,"['eess.AS', 'cs.CL', 'cs.SD']",http://arxiv.org/abs/1809.09190v1,both,1,0.99,"model, task, use, propose, write, paper, system, neural, set, base","['paper', 'audio', 'play', 'hot', 'cold', 'set', 'alarm', 'pm', 'problem', 'widespread', 'adoption', 'smart', 'device', 'system', 'worsen', 'year', 'error', 'speak', 'system', 'worsen', 'ofdotype']"
+1,1903.10625v2.pdf, finite state transducers fst are an efficient way to represent large areas in natural language processing in searchspaces they constrain phrasebased sta operations like composition and then constrain the output of a neural gec system to that space we show how to im confusion sets bryant and briscoe 2018 by applying modelling tech on spell checkers and morphology databases we rescore it with countbased and neural language nlms data using wordlevel context independent,Neural Grammatical Error Correction with Finite State Transducers,http://arxiv.org/pdf/1903.10625v2,"[arxiv.Result.Author('Felix Stahlberg'), arxiv.Result.Author('Christopher Bryant'), arxiv.Result.Author('Bill Byrne')]",,2019-03-25 23:05:11+00:00,"Grammatical error correction (GEC) is one of the areas in natural language
+processing in which purely neural models have not yet superseded more
+traditional symbolic models. Hybrid systems combining phrase-based statistical
+machine translation (SMT) and neural sequence models are currently among the
+most effective approaches to GEC. However, both SMT and neural
+sequence-to-sequence models require large amounts of annotated data. Language
+model based GEC (LM-GEC) is a promising alternative which does not rely on
+annotated training data. We show how to improve LM-GEC by applying modelling
+techniques based on finite state transducers. We report further gains by
+rescoring with neural language models. We show that our methods developed for
+LM-GEC can also be used with SMT systems if annotated training data is
+available. Our best system outperforms the best published result on the
+CoNLL-2014 test set, and achieves far better relative improvements over the SMT
+baselines than previous hybrid systems.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1903.10625v2,both,1,0.9945,"model, task, use, propose, write, paper, system, neural, set, base","['state', 'transducer', 'efficient', 'way', 'represent', 'large', 'area', 'searchspace', 'constrain', 'phrasebase', 'operation', 'composition', 'constrain', 'output', 'neural', 'gec', 'system', 'space', 'm', 'confusion', 'set', 'bryant', 'apply', 'model', 'tech', 'spell', 'checker', 'morphology', 'database', 'rescore', 'countbase', 'neural', 'nlm', 'datum', 'use', 'wordlevel', 'context', 'independent']"
+2,1904.04307v1.pdf, the quantification of semantic similarity between words can be used to evaluate the ability of a system to perform semantic interpretation 1 this field of word representations received heavy attention 2 in this work we use the popular wordsim353 simlex999 and semeval2017task2 datasets we include baseline evaluations with existing thai embedding models and identify the high ratio of outofvocabulary words as one of the biggest challenges the datasetsevaluation resultsand atoolfor easyevaluationof newthaiembedding models are available to the nlp community online they help to gain a broader picture of the properties of an evaluated word embedding model,Word Similarity Datasets for Thai: Construction and Evaluation,http://arxiv.org/pdf/1904.04307v1,"[arxiv.Result.Author('Ponrudee Netisopakul'), arxiv.Result.Author('Gerhard Wohlgenannt'), arxiv.Result.Author('Aleksei Pulich')]",,2019-04-08 19:18:09+00:00,"Distributional semantics in the form of word embeddings are an essential
+ingredient to many modern natural language processing systems. The
+quantification of semantic similarity between words can be used to evaluate the
+ability of a system to perform semantic interpretation. To this end, a number
+of word similarity datasets have been created for the English language over the
+last decades. For Thai language few such resources are available. In this work,
+we create three Thai word similarity datasets by translating and re-rating the
+popular WordSim-353, SimLex-999 and SemEval-2017-Task-2 datasets. The three
+datasets contain 1852 word pairs in total and have different characteristics in
+terms of difficulty, domain coverage, and notion of similarity (relatedness
+vs.~similarity). These features help to gain a broader picture of the
+properties of an evaluated word embedding model. We include baseline
+evaluations with existing Thai embedding models, and identify the high ratio of
+out-of-vocabulary words as one of the biggest challenges. All datasets,
+evaluation results, and a tool for easy evaluation of new Thai embedding models
+are available to the NLP community online.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1904.04307v1,both,0,0.9957,"use, model, semantic, task, framework, system, word, propose, lexical, work","['quantification', 'semantic', 'similarity', 'word', 'use', 'evaluate', 'ability', 'system', 'perform', 'semantic', 'interpretation', 'field', 'representation', 'receive', 'heavy', 'attention', 'work', 'popular', 'wordsim', 'semeval', 'baseline', 'evaluation', 'exist', 'thai', 'embed', 'model', 'identify', 'high', 'ratio', 'outofvocabulary', 'word', 'big', 'challenge', 'resultsand', 'atoolfor', 'model', 'available', 'community', 'online', 'help', 'gain', 'broad', 'picture', 'property', 'evaluate', 'embed', 'model']"
+3,1809.02794v3.pdf, this paper focuses on the aim of semantic role labeling srl task we show that the salient labels can ing models might not really understand the naturallanguage learning models this paper was supported by the national key project of china noyfbyfb key projects are usually partially supported by national key projects that are supposed to have a relationship that is supposed to be that relationship of key projects to key projects and key projects with key projects the authors of this paper are zhuoshengzhang yuweiwu zuchaoli and liang,Explicit Contextual Semantics for Text Comprehension,http://arxiv.org/pdf/1809.02794v3,"[arxiv.Result.Author('Zhuosheng Zhang'), arxiv.Result.Author('Yuwei Wu'), arxiv.Result.Author('Zuchao Li'), arxiv.Result.Author('Hai Zhao')]",,2018-09-08 12:34:59+00:00,"Who did what to whom is a major focus in natural language understanding,
+which is right the aim of semantic role labeling (SRL) task. Despite of sharing
+a lot of processing characteristics and even task purpose, it is surprisingly
+that jointly considering these two related tasks was never formally reported in
+previous work. Thus this paper makes the first attempt to let SRL enhance text
+comprehension and inference through specifying verbal predicates and their
+corresponding semantic roles. In terms of deep learning models, our embeddings
+are enhanced by explicit contextual semantic role labels for more fine-grained
+semantics. We show that the salient labels can be conveniently added to
+existing models and significantly improve deep learning models in challenging
+text comprehension tasks. Extensive experiments on benchmark machine reading
+comprehension and inference datasets verify that the proposed semantic learning
+helps our system reach new state-of-the-art over strong baselines which have
+been enhanced by well pretrained language models from the latest progress.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1809.02794v3,both,4,0.995,"model, task, text, work, base, project, key, paper, feature, method","['paper', 'focus', 'aim', 'semantic', 'role', 'label', 'label', 'ing', 'model', 'really', 'understand', 'naturallanguage', 'learning', 'model', 'support', 'national', 'key', 'project', 'key', 'project', 'usually', 'partially', 'support', 'national', 'key', 'project', 'suppose', 'relationship', 'suppose', 'relationship', 'key', 'project', 'key', 'project', 'key', 'project', 'key', 'project', 'author', 'paper']"
+4,1805.01083v1.pdf, the mainconstructusedinextractionlanguagesandsupported 8102 also in kokoisregularexpressionsoverthesurfacetextofasentraction to a new level by incorporating advances in natural langenre words the main construct used in the study is kokosscaleuponacorpusof 5millionwikipediaarticles this structure is reprereprosented as dependency parse trees or dependency trees in short,Scalable Semantic Querying of Text,http://arxiv.org/pdf/1805.01083v1,"[arxiv.Result.Author('Xiaolan Wang'), arxiv.Result.Author('Aaron Feng'), arxiv.Result.Author('Behzad Golshan'), arxiv.Result.Author('Alon Halevy'), arxiv.Result.Author('George Mihaila'), arxiv.Result.Author('Hidekazu Oiwa'), arxiv.Result.Author('Wang-Chiew Tan')]",,2018-05-03 01:57:31+00:00,"We present the KOKO system that takes declarative information extraction to a
+new level by incorporating advances in natural language processing techniques
+in its extraction language. KOKO is novel in that its extraction language
+simultaneously supports conditions on the surface of the text and on the
+structure of the dependency parse tree of sentences, thereby allowing for more
+refined extractions. KOKO also supports conditions that are forgiving to
+linguistic variation of expressing concepts and allows to aggregate evidence
+from the entire document in order to filter extractions.
+  To scale up, KOKO exploits a multi-indexing scheme and heuristics for
+efficient extractions. We extensively evaluate KOKO over publicly available
+text corpora. We show that KOKO indices take up the smallest amount of space,
+are notably faster and more effective than a number of prior indexing schemes.
+Finally, we demonstrate KOKO's scale up on a corpus of 5 million Wikipedia
+articles.",,cs.DB,"['cs.DB', 'cs.CL']",http://arxiv.org/abs/1805.01083v1,both,0,0.9883,"use, model, semantic, task, framework, system, word, propose, lexical, work","['also', 'new', 'level', 'incorporating', 'advance', 'word', 'main', 'construct', 'use', 'study', 'structure', 'dependency', 'parse', 'tree', 'dependency', 'tree', 'short']"
+5,1903.02784v1.pdf, arabic isrecognisedasthe4th most popular languageoftheinternet arabichasthreemainvarieties classicalarabicca modernstandardarabic msa3arabicdialectad could berevised28 january 2019 writteneitherinarabicorinromanscriptarabiziwhichcorrespondstoarabicwrittenwithlatinletletaccepted17 february 2019 the authors of the journal of king saud university  imane guellila and houda sadaneb faical azouaoua billel guenic damien nouveld douvel,Arabic natural language processing: An overview,http://arxiv.org/pdf/1903.02784v1,"[arxiv.Result.Author('Imane Guellil'), arxiv.Result.Author('Houda Saâdane'), arxiv.Result.Author('Faical Azouaou'), arxiv.Result.Author('Billel Gueni'), arxiv.Result.Author('Damien Nouvel')]",10.1016/j.jksuci.2019.02.006,2019-03-07 09:22:35+00:00,"Arabic is recognised as the 4th most used language of the Internet. Arabic
+has three main varieties: (1) classical Arabic (CA), (2) Modern Standard Arabic
+(MSA), (3) Arabic Dialect (AD). MSA and AD could be written either in Arabic or
+in Roman script (Arabizi), which corresponds to Arabic written with Latin
+letters, numerals and punctuation. Due to the complexity of this language and
+the number of corresponding challenges for NLP, many surveys have been
+conducted, in order to synthesise the work done on Arabic. However these
+surveys principally focus on two varieties of Arabic (MSA and AD, written in
+Arabic letters only), they are slightly old (no such survey since 2015) and
+therefore do not cover recent resources and tools. To bridge the gap, we
+propose a survey focusing on 90 recent research papers (74% of which were
+published after 2015). Our study presents and classifies the work done on the
+three varieties of Arabic, by concentrating on both Arabic and Arabizi, and
+associates each work to its publicly available resources whenever available.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1903.02784v1,both,3,0.9804,"use, method, sentence, research, classification, task, present, application, learn, model","['arabic', 'popular', 'msa', 'arabicdialectad', 'berevise', 'houda', 'sadaneb', 'faical', 'azouaoua', 'billel', 'douvel']"
+6,1807.00267v1.pdf, an efficient approach to encoding context for spoken language is not computationally efficient for two tasks such as making restaurant reservations or booking sons memory networkbased approaches to multievaluatecontextfrompriorutterancesforslu this is a work that can be processed by work with work with intent and work with dialogue acts and slots 1 that cant be processed with all intent but are more efficient for tasks such as reserving a table for two at olive garden,An Efficient Approach to Encoding Context for Spoken Language Understanding,http://arxiv.org/pdf/1807.00267v1,"[arxiv.Result.Author('Raghav Gupta'), arxiv.Result.Author('Abhinav Rastogi'), arxiv.Result.Author('Dilek Hakkani-Tur')]",,2018-07-01 04:11:18+00:00,"In task-oriented dialogue systems, spoken language understanding, or SLU,
+refers to the task of parsing natural language user utterances into semantic
+frames. Making use of context from prior dialogue history holds the key to more
+effective SLU. State of the art approaches to SLU use memory networks to encode
+context by processing multiple utterances from the dialogue at each turn,
+resulting in significant trade-offs between accuracy and computational
+efficiency. On the other hand, downstream components like the dialogue state
+tracker (DST) already keep track of the dialogue state, which can serve as a
+summary of the dialogue history. In this work, we propose an efficient approach
+to encoding context from prior utterances for SLU. More specifically, our
+architecture includes a separate recurrent neural network (RNN) based encoding
+module that accumulates dialogue context to guide the frame parsing sub-tasks
+and can be shared between SLU and DST. In our experiments, we demonstrate the
+effectiveness of our approach on dialogues from two domains.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1807.00267v1,both,4,0.9938,"model, task, text, work, base, project, key, paper, feature, method","['efficient', 'encoding', 'context', 'speak', 'computationally', 'efficient', 'task', 'make', 'restaurant', 'reservation', 'book', 'son', 'memory', 'networkbase', 'approach', 'work', 'process', 'work', 'work', 'intent', 'work', 'dialogue', 'act', 'slot', 'process', 'intent', 'efficient', 'task', 'reserve', 'table', 'olive', 'garden']"
+7,1805.11818v1.pdf, recent work on rer has sought to make an image refer to by a natural lanophobicguage expression  with the goal of gaining progressby introducing modelsthatarebettercareferringexpressionrecognition surprisingly we find that even sophisticated and most of the stateoftheart systems involve comipientlinguisticallymotivated models for this task we show that a system trained and tested on the input im agrawaletalets have a precision of 712 in top2 predic actually drivenbysuperficialbiasesindatasetsorations,Visual Referring Expression Recognition: What Do Systems Actually Learn?,http://arxiv.org/pdf/1805.11818v1,"[arxiv.Result.Author('Volkan Cirik'), arxiv.Result.Author('Louis-Philippe Morency'), arxiv.Result.Author('Taylor Berg-Kirkpatrick')]",,2018-05-30 06:03:21+00:00,"We present an empirical analysis of the state-of-the-art systems for
+referring expression recognition -- the task of identifying the object in an
+image referred to by a natural language expression -- with the goal of gaining
+insight into how these systems reason about language and vision. Surprisingly,
+we find strong evidence that even sophisticated and linguistically-motivated
+models for this task may ignore the linguistic structure, instead relying on
+shallow correlations introduced by unintended biases in the data selection and
+annotation process. For example, we show that a system trained and tested on
+the input image $\textit{without the input referring expression}$ can achieve a
+precision of 71.2% in top-2 predictions. Furthermore, a system that predicts
+only the object category given the input can achieve a precision of 84.2% in
+top-2 predictions. These surprisingly positive results for what should be
+deficient prediction scenarios suggest that careful analysis of what our models
+are learning -- and further, how our data is constructed -- is critical as we
+seek to make substantive progress on grounded language tasks.",,cs.CL,"['cs.CL', 'cs.AI', 'cs.CV', 'cs.NE']",http://arxiv.org/abs/1805.11818v1,both,0,0.9937,"use, model, semantic, task, framework, system, word, propose, lexical, work","['recent', 'work', 'rer', 'seek', 'make', 'image', 'refer', 'lanophobicguage', 'expression', 'goal', 'gain', 'progressby', 'introduce', 'surprisingly', 'find', 'even', 'sophisticated', 'stateoftheart', 'system', 'involve', 'model', 'task', 'system', 'train', 'test', 'input', 'm', 'agrawaletalet', 'precision', 'top', 'predic', 'actually']"
+8,1802.09968v2.pdf, a hybrid wordcharacter model for abstractive summarization authors propose a hybrid phrase to sequence seq2seq architecrehensivewordcharacter approach hwc they learnaninternallananreoder hwc approach also generates the different from any european languages especially with the new clean lc in its character representation and word segmenrelatedstsdataset tation the authors propose that this approach is well on the use of a twodecenoderbased summarization,A Hybrid Word-Character Approach to Abstractive Summarization,http://arxiv.org/pdf/1802.09968v2,"[arxiv.Result.Author('Chieh-Teng Chang'), arxiv.Result.Author('Chi-Chia Huang'), arxiv.Result.Author('Chih-Yuan Yang'), arxiv.Result.Author('Jane Yung-Jen Hsu')]",,2018-02-27 15:31:11+00:00,"Automatic abstractive text summarization is an important and challenging
+research topic of natural language processing. Among many widely used
+languages, the Chinese language has a special property that a Chinese character
+contains rich information comparable to a word. Existing Chinese text
+summarization methods, either adopt totally character-based or word-based
+representations, fail to fully exploit the information carried by both
+representations. To accurately capture the essence of articles, we propose a
+hybrid word-character approach (HWC) which preserves the advantages of both
+word-based and character-based representations. We evaluate the advantage of
+the proposed HWC approach by applying it to two existing methods, and discover
+that it generates state-of-the-art performance with a margin of 24 ROUGE points
+on a widely used dataset LCSTS. In addition, we find an issue contained in the
+LCSTS dataset and offer a script to remove overlapping pairs (a summary and a
+short text) to create a clean dataset for the community. The proposed HWC
+approach also generates the best performance on the new, clean LCSTS dataset.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1802.09968v2,both,0,0.9923,"use, model, semantic, task, framework, system, word, propose, lexical, work","['hybrid', 'wordcharact', 'model', 'abstractive', 'summarization', 'author', 'propose', 'hybrid', 'phrase', 'sequence', 'seq', 'also', 'generate', 'different', 'european', 'language', 'especially', 'new', 'clean', 'lc', 'character', 'representation', 'tation', 'author', 'propose', 'summarization']"
+9,1805.05588v1.pdf, regular expressions res are widely used in network modulelevelweshowtoexploitthevarious natural language processing nlp tasks knowledge encoded in res we believe the use of res can go beyond simcentric pattern matching and nlp tasks is bound by the numple pattern matching we argue that such information can be uticentriclearningfor nlps it is used to handle certain cases with high precision leaving therestfordatadriven methods,Marrying up Regular Expressions with Neural Networks: A Case Study for Spoken Language Understanding,http://arxiv.org/pdf/1805.05588v1,"[arxiv.Result.Author('Bingfeng Luo'), arxiv.Result.Author('Yansong Feng'), arxiv.Result.Author('Zheng Wang'), arxiv.Result.Author('Songfang Huang'), arxiv.Result.Author('Rui Yan'), arxiv.Result.Author('Dongyan Zhao')]",,2018-05-15 06:40:44+00:00,"The success of many natural language processing (NLP) tasks is bound by the
+number and quality of annotated data, but there is often a shortage of such
+training data. In this paper, we ask the question: ""Can we combine a neural
+network (NN) with regular expressions (RE) to improve supervised learning for
+NLP?"". In answer, we develop novel methods to exploit the rich expressiveness
+of REs at different levels within a NN, showing that the combination
+significantly enhances the learning effectiveness when a small number of
+training examples are available. We evaluate our approach by applying it to
+spoken language understanding for intent detection and slot filling.
+Experimental results show that our approach is highly effective in exploiting
+the available training data, giving a clear boost to the RE-unaware NN.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1805.05588v1,both,0,0.9933,"use, model, semantic, task, framework, system, word, propose, lexical, work","['regular', 'expression', 're', 'widely', 'use', 'network', 'task', 'knowledge', 'encode', 're', 'believe', 'go', 'simcentric', 'pattern', 'matching', 'task', 'bind', 'numple', 'pattern', 'match', 'argue', 'information', 'use', 'handle', 'certain', 'case', 'high', 'precision', 'leave', 'method']"
+10,1807.11838v1.pdf, a robot that could perform simple fetchandcarry tasks would have many potential applications in eldercare we describe how this was successfully implemented for learning new nouns and verbs in a tabletop setting creating this language learning kernel may be the last explicit programming the robot ever needs  the core mechanism could eventually be used for imparting a vast amount of knowledge much as a child learns from its parents and teachers we detail the languageprocessing used on our robot eli and explain how this is performed how it interacts with user gestures,Extensible Grounding of Speech for Robot Instruction,http://arxiv.org/pdf/1807.11838v1,[arxiv.Result.Author('Jonathan Connell')],,2018-07-31 14:31:17+00:00,"Spoken language is a convenient interface for commanding a mobile robot. Yet
+for this to work a number of base terms must be grounded in perceptual and
+motor skills. We detail the language processing used on our robot ELI and
+explain how this grounding is performed, how it interacts with user gestures,
+and how it handles phenomena such as anaphora. More importantly, however, there
+are certain concepts which the robot cannot be preprogrammed with, such as the
+names of various objects in a household or the nature of specific tasks it may
+be requested to perform. In these cases it is vital that there exist a method
+for extending the grounding, essentially ""learning by being told"". We describe
+how this was successfully implemented for learning new nouns and verbs in a
+tabletop setting. Creating this language learning kernel may be the last
+explicit programming the robot ever needs - the core mechanism could eventually
+be used for imparting a vast amount of knowledge, much as a child learns from
+its parents and teachers.",,cs.RO,"['cs.RO', 'cs.AI', 'cs.CL']",http://arxiv.org/abs/1807.11838v1,both,3,0.9952,"use, method, sentence, research, classification, task, present, application, learn, model","['robot', 'perform', 'simple', 'fetchandcarry', 'task', 'many', 'potential', 'application', 'eldercare', 'describe', 'successfully', 'implement', 'learn', 'new', 'noun', 'verb', 'tabletop', 'setting', 'create', 'learn', 'kernel', 'last', 'explicit', 'programming', 'robot', 'ever', 'need', 'core', 'mechanism', 'eventually', 'use', 'impart', 'vast', 'amount', 'knowledge', 'much', 'child', 'learn', 'parent', 'teacher', 'use', 'explain', 'perform', 'interact', 'user', 'gesture']"
+11,1708.01009v1.pdf, variational rnns drop the same network units at each timestep as opposed to dropouttechmationismaskedateachtimestep dropout is destructive when naively applied to the task of language modeling some rnn architectures can be used without modification to ex activations fromht both of these networkunitactivationsinht1tobeequaltotheprevioustechniques require minimal modification to the exactivationsfromht these regularization methods can limit the computational capacity of an rnn,Revisiting Activation Regularization for Language RNNs,http://arxiv.org/pdf/1708.01009v1,"[arxiv.Result.Author('Stephen Merity'), arxiv.Result.Author('Bryan McCann'), arxiv.Result.Author('Richard Socher')]",,2017-08-03 05:53:53+00:00,"Recurrent neural networks (RNNs) serve as a fundamental building block for
+many sequence tasks across natural language processing. Recent research has
+focused on recurrent dropout techniques or custom RNN cells in order to improve
+performance. Both of these can require substantial modifications to the machine
+learning model or to the underlying RNN configurations. We revisit traditional
+regularization techniques, specifically L2 regularization on RNN activations
+and slowness regularization over successive hidden states, to improve the
+performance of RNNs on the task of language modeling. Both of these techniques
+require minimal modification to existing RNN architectures and result in
+performance improvements comparable or superior to more complicated
+regularization techniques or custom cell architectures. These regularization
+techniques can be used without any modification on optimized LSTM
+implementations such as the NVIDIA cuDNN LSTM.",,cs.CL,"['cs.CL', 'cs.NE']",http://arxiv.org/abs/1708.01009v1,both,1,0.9919,"model, task, use, propose, write, paper, system, neural, set, base","['drop', 'network', 'unit', 'timestep', 'oppose', 'dropout', 'destructive', 'naively', 'apply', 'task', 'modeling', 'rnn', 'architecture', 'use', 'modification', 'activation', 'fromht', 'require', 'minimal', 'modification', 'regularization', 'method', 'limit', 'computational', 'capacity', 'rnn']"
+12,1706.03530v1.pdf, candidate sentence selection for language from a comprehensive framework to an empirical evaluation we focus on two fundamental aspects linguistic complexity andapologeticthedependenceoftheextractedsentencesontheir original context we have an important role in the development of l2 learning both receptive and productive skills keyser 2007 corpora as potential practice material is readily available in large quantities however their use in l2 teaching has both been supported and opposed,Candidate sentence selection for language learning exercises: from a comprehensive framework to an empirical evaluation,http://arxiv.org/pdf/1706.03530v1,"[arxiv.Result.Author('Ildikó Pilán'), arxiv.Result.Author('Elena Volodina'), arxiv.Result.Author('Lars Borin')]",,2017-06-12 09:21:45+00:00,"We present a framework and its implementation relying on Natural Language
+Processing methods, which aims at the identification of exercise item
+candidates from corpora. The hybrid system combining heuristics and machine
+learning methods includes a number of relevant selection criteria. We focus on
+two fundamental aspects: linguistic complexity and the dependence of the
+extracted sentences on their original context. Previous work on exercise
+generation addressed these two criteria only to a limited extent, and a refined
+overall candidate sentence selection framework appears also to be lacking. In
+addition to a detailed description of the system, we present the results of an
+empirical evaluation conducted with language teachers and learners which
+indicate the usefulness of the system for educational purposes. We have
+integrated our system into a freely available online learning platform.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1706.03530v1,both,2,0.9927,"system, lithium, lm, usage, sentence, user, rich, free, learn, content","['candidate', 'sentence', 'selection', 'comprehensive', 'framework', 'empirical', 'evaluation', 'focus', 'fundamental', 'aspect', 'linguistic', 'complexity', 'original', 'context', 'important', 'role', 'development', 'learn', 'receptive', 'productive', 'skill', 'potential', 'practice', 'material', 'readily', 'available', 'large', 'quantity', 'teach', 'support', 'oppose']"
+13,1707.04244v1.pdf, lithium nlp extracts a rich set developed for such content lithium is a resourceconstrained high involves heavy usage of slang jargons 7102throughput and languageagnosticsys emoticonsorabbreviations for information extraction from do not follow formal grammatical rules the lithium system is at par with stateoftheart nlp systems and can be applied to industrial systems that posrengle and practical they should be able to process rich user genercentric run on offshelf commodity machines,Lithium NLP: A System for Rich Information Extraction from Noisy User Generated Text on Social Media,http://arxiv.org/pdf/1707.04244v1,"[arxiv.Result.Author('Preeti Bhargava'), arxiv.Result.Author('Nemanja Spasojevic'), arxiv.Result.Author('Guoning Hu')]",,2017-07-13 17:52:51+00:00,"In this paper, we describe the Lithium Natural Language Processing (NLP)
+system - a resource-constrained, high- throughput and language-agnostic system
+for information extraction from noisy user generated text on social media.
+Lithium NLP extracts a rich set of information including entities, topics,
+hashtags and sentiment from text. We discuss several real world applications of
+the system currently incorporated in Lithium products. We also compare our
+system with existing commercial and academic NLP systems in terms of
+performance, information extracted and languages supported. We show that
+Lithium NLP is at par with and in some cases, outperforms state- of-the-art
+commercial NLP systems.",,cs.AI,"['cs.AI', 'cs.CL', 'cs.IR']",http://arxiv.org/abs/1707.04244v1,both,2,0.9937,"system, lithium, lm, usage, sentence, user, rich, free, learn, content","['lithium', 'extract', 'rich', 'set', 'develop', 'content', 'lithium', 'high', 'involve', 'heavy', 'usage', 'jargon', 'throughput', 'information', 'extraction', 'follow', 'formal', 'grammatical', 'rule', 'lithium', 'system', 'par', 'stateoftheart', 'system', 'apply', 'industrial', 'system', 'posrengle', 'practical', 'able', 'process', 'rich', 'user', 'run', 'commodity', 'machine']"
+14,1712.08917v1.pdf, building a sentiment corpus of tweets in brazilian portuguese the large amount of data available in social media forums and websites motivates researches in several areas of natural language thepopularityoftheareaduetoitssubjectiveandsemanticcharacteristicsmotivatesresearchon novel methods and approaches for classification there is a high demand for datasets on different domains and differentlanguages this paper introducestweetsentbr asentimentcorporaforbrazilianportuguesemanuallyannotated with 15000sentenceson tv show domain the sentences were labeled in three classes positive neutral and negative by seven annotators,Building a Sentiment Corpus of Tweets in Brazilian Portuguese,http://arxiv.org/pdf/1712.08917v1,"[arxiv.Result.Author('Henrico Bertini Brum'), arxiv.Result.Author('Maria das Graças Volpe Nunes')]",,2017-12-24 13:23:58+00:00,"The large amount of data available in social media, forums and websites
+motivates researches in several areas of Natural Language Processing, such as
+sentiment analysis. The popularity of the area due to its subjective and
+semantic characteristics motivates research on novel methods and approaches for
+classification. Hence, there is a high demand for datasets on different domains
+and different languages. This paper introduces TweetSentBR, a sentiment corpora
+for Brazilian Portuguese manually annotated with 15.000 sentences on TV show
+domain. The sentences were labeled in three classes (positive, neutral and
+negative) by seven annotators, following literature guidelines for ensuring
+reliability on the annotation. We also ran baseline experiments on polarity
+classification using three machine learning methods, reaching 80.99% on
+F-Measure and 82.06% on accuracy in binary classification, and 59.85% F-Measure
+and 64.62% on accuracy on three point classification.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1712.08917v1,both,3,0.9934,"use, method, sentence, research, classification, task, present, application, learn, model","['building', 'sentiment', 'large', 'amount', 'datum', 'available', 'social', 'medium', 'forum', 'website', 'motivate', 'research', 'several', 'area', 'novel', 'method', 'approach', 'classification', 'high', 'demand', 'dataset', 'different', 'domain', 'sentenceson', 'tv', 'domain', 'sentence', 'label', 'class', 'positive', 'neutral', 'negative', 'annotator']"
+15,1804.07827v2.pdf, efficient contextualized representation language model pruning for sequence labeling we aim to compress lms for quality sentences for nlp applications these lms automatically cap the end task in a pluginandplay manner by introducing the 2v728704081vixra lowrnnswithdeepandnarrowones we can detach any layerwithout affecting others and stretch shallowand wide lms to be deep and narrow in upto 30 relativeerrorreductions,Efficient Contextualized Representation: Language Model Pruning for Sequence Labeling,http://arxiv.org/pdf/1804.07827v2,"[arxiv.Result.Author('Liyuan Liu'), arxiv.Result.Author('Xiang Ren'), arxiv.Result.Author('Jingbo Shang'), arxiv.Result.Author('Jian Peng'), arxiv.Result.Author('Jiawei Han')]",,2018-04-20 21:10:17+00:00,"Many efforts have been made to facilitate natural language processing tasks
+with pre-trained language models (LMs), and brought significant improvements to
+various applications. To fully leverage the nearly unlimited corpora and
+capture linguistic information of multifarious levels, large-size LMs are
+required; but for a specific task, only parts of these information are useful.
+Such large-sized LMs, even in the inference stage, may cause heavy computation
+workloads, making them too time-consuming for large-scale applications. Here we
+propose to compress bulky LMs while preserving useful information with regard
+to a specific task. As different layers of the model keep different
+information, we develop a layer selection method for model pruning using
+sparsity-inducing regularization. By introducing the dense connectivity, we can
+detach any layer without affecting others, and stretch shallow and wide LMs to
+be deep and narrow. In model training, LMs are learned with layer-wise dropouts
+for better robustness. Experiments on two benchmark datasets demonstrate the
+effectiveness of our method.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1804.07827v2,both,2,0.9927,"system, lithium, lm, usage, sentence, user, rich, free, learn, content","['efficient', 'contextualize', 'representation', 'model', 'prune', 'sequence', 'labeling', 'aim', 'compress', 'lm', 'quality', 'sentence', 'application', 'lm', 'automatically', 'cap', 'end', 'task', 'pluginandplay', 'manner', 'introduce', 'layerwithout', 'affect', 'other', 'stretch', 'shallowand', 'wide', 'lm', 'deep', 'narrow', 'upto']"
+16,1804.03052v1.pdf, the majority of humans acquire the ability to communicate directly through spoken natural language before they even learn to read and write we show that the audiovisual retrieval perforforprofit of a multilingual model exceeds that of the monolinpronesemantic crosslingual speechtospeechretrieval we believe this could be useful for future work exploring visually grounded speech toreceivespeech translation without the need for text transcriptions or the need to use languagespecific inductive bias,Vision as an Interlingua: Learning Multilingual Semantic Embeddings of Untranscribed Speech,http://arxiv.org/pdf/1804.03052v1,"[arxiv.Result.Author('David Harwath'), arxiv.Result.Author('Galen Chuang'), arxiv.Result.Author('James Glass')]",,2018-04-09 15:15:37+00:00,"In this paper, we explore the learning of neural network embeddings for
+natural images and speech waveforms describing the content of those images.
+These embeddings are learned directly from the waveforms without the use of
+linguistic transcriptions or conventional speech recognition technology. While
+prior work has investigated this setting in the monolingual case using English
+speech data, this work represents the first effort to apply these techniques to
+languages beyond English. Using spoken captions collected in English and Hindi,
+we show that the same model architecture can be successfully applied to both
+languages. Further, we demonstrate that training a multilingual model
+simultaneously on both languages offers improved performance over the
+monolingual models. Finally, we show that these models are capable of
+performing semantic cross-lingual speech-to-speech retrieval.",,cs.CL,"['cs.CL', 'cs.SD', 'eess.AS']",http://arxiv.org/abs/1804.03052v1,both,1,0.9938,"model, task, use, propose, write, paper, system, neural, set, base","['majority', 'human', 'acquire', 'ability', 'communicate', 'directly', 'speak', 'even', 'learn', 'read', 'write', 'audiovisual', 'retrieval', 'perforforprofit', 'multilingual', 'model', 'exceed', 'crosslingual', 'believe', 'useful', 'future', 'work', 'explore', 'visually', 'ground', 'speech', 'toreceivespeech', 'translation', 'need', 'text', 'transcription', 'need', 'inductive', 'bias']"
+17,1512.05919v2.pdf, a planning based framework for essay generation aims to understand and represent the meaning of a topic word we argue that generating a well organized artiheticalworkconsistsofthreecomponents including cle is a challenging task the taskischallengingingasit requiresstheing the framework consists of three steps of organizing selecting a topic organizing a sentence and organizing them to form an organized arrivective article we lay out is an electronic product including battery and it can be used to chat with others after understanding the topic word we discuss how to collect topicspecific fuel eg phrases,A Planning based Framework for Essay Generation,http://arxiv.org/pdf/1512.05919v2,"[arxiv.Result.Author('Bing Qin'), arxiv.Result.Author('Duyu Tang'), arxiv.Result.Author('Xinwei Geng'), arxiv.Result.Author('Dandan Ning'), arxiv.Result.Author('Jiahao Liu'), arxiv.Result.Author('Ting Liu')]",,2015-12-18 12:10:42+00:00,"Generating an article automatically with computer program is a challenging
+task in artificial intelligence and natural language processing. In this paper,
+we target at essay generation, which takes as input a topic word in mind and
+generates an organized article under the theme of the topic. We follow the idea
+of text planning \cite{Reiter1997} and develop an essay generation framework.
+The framework consists of three components, including topic understanding,
+sentence extraction and sentence reordering. For each component, we studied
+several statistical algorithms and empirically compared between them in terms
+of qualitative or quantitative analysis. Although we run experiments on Chinese
+corpus, the method is language independent and can be easily adapted to other
+language. We lay out the remaining challenges and suggest avenues for future
+research.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1512.05919v2,both,4,0.9957,"model, task, text, work, base, project, key, paper, feature, method","['plan', 'base', 'framework', 'essay', 'generation', 'aim', 'understand', 'represent', 'mean', 'topic', 'argue', 'generating', 'organize', 'include', 'cle', 'challenge', 'task', 'requiresstheing', 'framework', 'consist', 'step', 'organize', 'select', 'topic', 'organize', 'sentence', 'organizing', 'form', 'organize', 'arrivective', 'article', 'lie', 'electronic', 'product', 'include', 'battery', 'use', 'chat', 'other', 'understand', 'topic', 'discuss', 'collect', 'topicspecific', 'fuel', 'phrase']"
+18,1803.08966v1.pdf, automated techniques such as model checking violation ie the probability to reach an error state exceeds have been used to verify humangenerated robotic mission plans 3 4 we propose an approach based that exceeds the probability threshold 3 the proposed solution is based on mixedinteger linear programming for generating explain to explain counterexamples represented as a set of explainable counterexamples that are minimal sound and complete paths or a critical subsystem even with a modest number of 32 paths in this paper we propose a natural language medium case study of warehouse robots planning,Counterexamples for Robotic Planning Explained in Structured Language,http://arxiv.org/pdf/1803.08966v1,"[arxiv.Result.Author('Lu Feng'), arxiv.Result.Author('Mahsa Ghasemi'), arxiv.Result.Author('Kai-Wei Chang'), arxiv.Result.Author('Ufuk Topcu')]",,2018-03-23 20:14:51+00:00,"Automated techniques such as model checking have been used to verify models
+of robotic mission plans based on Markov decision processes (MDPs) and generate
+counterexamples that may help diagnose requirement violations. However, such
+artifacts may be too complex for humans to understand, because existing
+representations of counterexamples typically include a large number of paths or
+a complex automaton. To help improve the interpretability of counterexamples,
+we define a notion of explainable counterexample, which includes a set of
+structured natural language sentences to describe the robotic behavior that
+lead to a requirement violation in an MDP model of robotic mission plan. We
+propose an approach based on mixed-integer linear programming for generating
+explainable counterexamples that are minimal, sound and complete. We
+demonstrate the usefulness of the proposed approach via a case study of
+warehouse robots planning.",,cs.RO,"['cs.RO', 'cs.CL', 'cs.FL']",http://arxiv.org/abs/1803.08966v1,both,1,0.9959,"model, task, use, propose, write, paper, system, neural, set, base","['automate', 'technique', 'model', 'check', 'violation', 'probability', 'reach', 'error', 'state', 'exceed', 'use', 'verify', 'humangenerate', 'robotic', 'mission', 'plan', 'propose', 'base', 'exceed', 'probability', 'threshold', 'propose', 'solution', 'base', 'programming', 'generating', 'explain', 'explain', 'counterexample', 'represent', 'set', 'explainable', 'counterexample', 'minimal', 'sound', 'complete', 'path', 'critical', 'subsystem', 'even', 'modest', 'number', 'path', 'paper', 'propose', 'medium', 'case', 'study', 'warehouse', 'robot', 'plan']"
+19,1609.02960v1.pdf, a large scale corpus of gulf arabic has 110m words from 1200 forum novels we annotate the corpus for subdialect information at the document level we present a resultsofapreliminary studyinthemorphologicalannotation of gulfarabic building a morphologically corlinguistic corpus is a first step towards developing nlp applications yadac corpus thetextofthecorpusispubliclybrowsable throughawebinterfacewedeveloped forit 6102vixra,A Large Scale Corpus of Gulf Arabic,http://arxiv.org/pdf/1609.02960v1,"[arxiv.Result.Author('Salam Khalifa'), arxiv.Result.Author('Nizar Habash'), arxiv.Result.Author('Dana Abdulrahim'), arxiv.Result.Author('Sara Hassan')]",,2016-09-09 22:22:53+00:00,"Most Arabic natural language processing tools and resources are developed to
+serve Modern Standard Arabic (MSA), which is the official written language in
+the Arab World. Some Dialectal Arabic varieties, notably Egyptian Arabic, have
+received some attention lately and have a growing collection of resources that
+include annotated corpora and morphological analyzers and taggers. Gulf Arabic,
+however, lags behind in that respect. In this paper, we present the Gumar
+Corpus, a large-scale corpus of Gulf Arabic consisting of 110 million words
+from 1,200 forum novels. We annotate the corpus for sub-dialect information at
+the document level. We also present results of a preliminary study in the
+morphological annotation of Gulf Arabic which includes developing guidelines
+for a conventional orthography. The text of the corpus is publicly browsable
+through a web interface we developed for it.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1609.02960v1,both,3,0.9891,"use, method, sentence, research, classification, task, present, application, learn, model","['large', 'scale', 'word', 'forum', 'novel', 'annotate', 'subdialect', 'information', 'document', 'level', 'present', 'gulfarabic', 'building', 'morphologically', 'corlinguistic', 'first', 'step', 'develop', 'application', 'yadac']"
+20,1601.01195v1.pdf, this paper presents a description of hmm hidden markov model based system for pos tagging from socialpartofspeech tagging for codemixed indian social mediatext at icon 2015 the tool that we have developed for the task is based on trigram mixed indian social media text is defined in this year to the hidden markov model that utilizes information from dictionary build the pos tagger systems for code mixed indian social media text on twitter has been presented in 13 the interest in applying nlp methods for analyzing nonlanguagecommented,Part-of-Speech Tagging for Code-mixed Indian Social Media Text at ICON 2015,http://arxiv.org/pdf/1601.01195v1,[arxiv.Result.Author('Kamal Sarkar')],,2016-01-06 14:40:38+00:00,"This paper discusses the experiments carried out by us at Jadavpur University
+as part of the participation in ICON 2015 task: POS Tagging for Code-mixed
+Indian Social Media Text. The tool that we have developed for the task is based
+on Trigram Hidden Markov Model that utilizes information from dictionary as
+well as some other word level features to enhance the observation probabilities
+of the known tokens as well as unknown tokens. We submitted runs for
+Bengali-English, Hindi-English and Tamil-English Language pairs. Our system has
+been trained and tested on the datasets released for ICON 2015 shared task: POS
+Tagging For Code-mixed Indian Social Media Text. In constrained mode, our
+system obtains average overall accuracy (averaged over all three language
+pairs) of 75.60% which is very close to other participating two systems (76.79%
+for IIITH and 75.79% for AMRITA_CEN) ranked higher than our system. In
+unconstrained mode, our system obtains average overall accuracy of 70.65% which
+is also close to the system (72.85% for AMRITA_CEN) which obtains the highest
+average overall accuracy.",,cs.CL,"['cs.CL', '68T50']",http://arxiv.org/abs/1601.01195v1,both,4,0.9956,"model, task, text, work, base, project, key, paper, feature, method","['paper', 'present', 'hmm', 'hide', 'model', 'base', 'system', 'pos', 'tagging', 'tag', 'codemixe', 'indian', 'social', 'mediatext', 'icon', 'tool', 'develop', 'task', 'base', 'mix', 'indian', 'social', 'medium', 'text', 'define', 'year', 'hide', 'model', 'utilize', 'information', 'dictionary', 'build', 'pos', 'system', 'mix', 'indian', 'social', 'medium', 'text', 'twitter', 'present', 'interest', 'apply', 'method', 'analyze']"
+21,1001.4273v1.pdf, sentence simplification aids proteinprotein interaction extraction ppis the study of proteinprotein interactions and othertences in biomedical literature is a central tenet of modern transscientific research we report on the impact that automatic simpli lational and genomic research can help accelerate biomedical research we use the intertoken dependencies to evaluate the complexity of the sentences we also present the methods used to evaluate the efficacy of the methods used finally we exfully explain the methods,Sentence Simplification Aids Protein-Protein Interaction Extraction,http://arxiv.org/pdf/1001.4273v1,"[arxiv.Result.Author('Siddhartha Jonnalagadda'), arxiv.Result.Author('Graciela Gonzalez')]",,2010-01-24 20:23:10+00:00,"Accurate systems for extracting Protein-Protein Interactions (PPIs)
+automatically from biomedical articles can help accelerate biomedical research.
+Biomedical Informatics researchers are collaborating to provide metaservices
+and advance the state-of-art in PPI extraction. One problem often neglected by
+current Natural Language Processing systems is the characteristic complexity of
+the sentences in biomedical literature. In this paper, we report on the impact
+that automatic simplification of sentences has on the performance of a
+state-of-art PPI extraction system, showing a substantial improvement in recall
+(8%) when the sentence simplification method is applied, without significant
+impact to precision.","The 3rd International Symposium on Languages in Biology and
+  Medicine, Jeju Island, South Korea, November 8-10, 2009",cs.CL,['cs.CL'],http://arxiv.org/abs/1001.4273v1,both,3,0.9949,"use, method, sentence, research, classification, task, present, application, learn, model","['sentence', 'simplification', 'aid', 'proteinprotein', 'interaction', 'extraction', 'ppis', 'study', 'interaction', 'othertence', 'biomedical', 'central', 'tenet', 'modern', 'transscientific', 'research', 'report', 'impact', 'automatic', 'lational', 'genomic', 'research', 'help', 'accelerate', 'biomedical', 'research', 'intertoken', 'dependency', 'evaluate', 'complexity', 'sentence', 'also', 'present', 'method', 'use', 'evaluate', 'efficacy', 'method', 'use', 'finally', 'exfully', 'explain', 'method']"
+22,1603.07771v3.pdf, this paper introduces a neural model for paredtoover400kwordsinourdataset it generates biographical sen generation model conditioned on a wikipedia intences from fact tables on a new dataset of fobox these datasets have a limidatedvocabulary of only about350wordseachcomprogres the model exploits structured data both globally and globally to the large and diverse problem of generating a large and very diverse problem in contrast to previous work we scaletoscale the model,Neural Text Generation from Structured Data with Application to the Biography Domain,http://arxiv.org/pdf/1603.07771v3,"[arxiv.Result.Author('Remi Lebret'), arxiv.Result.Author('David Grangier'), arxiv.Result.Author('Michael Auli')]",,2016-03-24 22:40:00+00:00,"This paper introduces a neural model for concept-to-text generation that
+scales to large, rich domains. We experiment with a new dataset of biographies
+from Wikipedia that is an order of magnitude larger than existing resources
+with over 700k samples. The dataset is also vastly more diverse with a 400k
+vocabulary, compared to a few hundred words for Weathergov or Robocup. Our
+model builds upon recent work on conditional neural language model for text
+generation. To deal with the large vocabulary, we extend these models to mix a
+fixed vocabulary with copy actions that transfer sample-specific words from the
+input database to the generated output sentence. Our neural model significantly
+out-performs a classical Kneser-Ney language model adapted to this task by
+nearly 15 BLEU.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1603.07771v3,both,4,0.9936,"model, task, text, work, base, project, key, paper, feature, method","['paper', 'introduce', 'neural', 'model', 'generate', 'generation', 'model', 'condition', 'intence', 'fact', 'table', 'new', 'dataset', 'model', 'exploit', 'structure', 'datum', 'globally', 'globally', 'large', 'diverse', 'problem', 'generate', 'large', 'diverse', 'problem', 'contrast', 'previous', 'work', 'scaletoscale', 'model']"
+23,1312.3168v1.pdf, semantic types lexical sorts and classifiers are needed to include lexical considerations in a semantical analyser such as boxer or grail this paper is concerned with the second partoftheproblem and proposesalinguisticallymotivatedsolution we propose a cognitively and linguistically motivated set of set of linguistic terms for lexical semantics we defend the view that classicentric languages whichhavesuchpronounsareanappealingsolution bothlinguisticallyandcognitivelymotivated,"Semantic Types, Lexical Sorts and Classifiers",http://arxiv.org/pdf/1312.3168v1,"[arxiv.Result.Author('Bruno Mery'), arxiv.Result.Author('Christian Retoré')]",,2013-12-11 14:04:52+00:00,"We propose a cognitively and linguistically motivated set of sorts for
+lexical semantics in a compositional setting: the classifiers in languages that
+do have such pronouns. These sorts are needed to include lexical considerations
+in a semantical analyser such as Boxer or Grail. Indeed, all proposed lexical
+extensions of usual Montague semantics to model restriction of selection,
+felicitous and infelicitous copredication require a rich and refined type
+system whose base types are the lexical sorts, the basis of the many-sorted
+logic in which semantical representations of sentences are stated. However,
+none of those approaches define precisely the actual base types or sorts to be
+used in the lexicon. In this article, we shall discuss some of the options
+commonly adopted by researchers in formal lexical semantics, and defend the
+view that classifiers in the languages which have such pronouns are an
+appealing solution, both linguistically and cognitively motivated.","NLPCS '10- 10th International Workshop on Natural Language
+  Processing and Computer Science - 2013 (2013)",cs.CL,['cs.CL'],http://arxiv.org/abs/1312.3168v1,both,0,0.9926,"use, model, semantic, task, framework, system, word, propose, lexical, work","['semantic', 'type', 'lexical', 'sort', 'classifier', 'need', 'lexical', 'consideration', 'semantical', 'analyser', 'grail', 'paper', 'concern', 'second', 'propose', 'cognitively', 'linguistically', 'motivated', 'set', 'set', 'linguistic', 'term', 'lexical', 'semantic', 'view', 'classicentric', 'language']"
+24,1602.07749v1.pdf, thien huu nguyen avirupsil georgianadinu and raduflorian discuss the robustness of the mention detection with recurrent neural networks the advantage 42 of rnns over the traditional approaches to mention detection the challenge is come up with the models that can encode and utilize these longrange dedescribed denominal the president or pronominal he she to classifytheminthependence,Toward Mention Detection Robustness with Recurrent Neural Networks,http://arxiv.org/pdf/1602.07749v1,"[arxiv.Result.Author('Thien Huu Nguyen'), arxiv.Result.Author('Avirup Sil'), arxiv.Result.Author('Georgiana Dinu'), arxiv.Result.Author('Radu Florian')]",,2016-02-24 23:14:01+00:00,"One of the key challenges in natural language processing (NLP) is to yield
+good performance across application domains and languages. In this work, we
+investigate the robustness of the mention detection systems, one of the
+fundamental tasks in information extraction, via recurrent neural networks
+(RNNs). The advantage of RNNs over the traditional approaches is their capacity
+to capture long ranges of context and implicitly adapt the word embeddings,
+trained on a large corpus, into a task-specific word representation, but still
+preserve the original semantic generalization to be helpful across domains. Our
+systematic evaluation for RNN architectures demonstrates that RNNs not only
+outperform the best reported systems (up to 9\% relative error reduction) in
+the general setting but also achieve the state-of-the-art performance in the
+cross-domain setting for English. Regarding other languages, RNNs are
+significantly better than the traditional methods on the similar task of named
+entity recognition for Dutch (up to 22\% relative error reduction).",,cs.CL,['cs.CL'],http://arxiv.org/abs/1602.07749v1,both,4,0.9896,"model, task, text, work, base, project, key, paper, feature, method","['robustness', 'mention', 'detection', 'recurrent', 'neural', 'network', 'advantage', 'rnn', 'traditional', 'approach', 'mention', 'detection', 'challenge', 'come', 'model', 'dedescribe', 'denominal', 'president', 'pronominal']"
+25,1803.00124v2.pdf, there is a growing body of research in nlp for the arabic language in recent years for example 2 3 and 4 however orthography and dialects makes sentiment analysis for arabic more challenging we report improved accuracy of sentiment different text feature selections and the way the features are used to classify 9195 on our publicly available arabic within the machine learning classifiers this paper will first overview some related recent works on a powerful tool to capture together the closest words from a sentiment analysis,Improving Sentiment Analysis in Arabic Using Word Representation,http://arxiv.org/pdf/1803.00124v2,"[arxiv.Result.Author('Abdulaziz M. Alayba'), arxiv.Result.Author('Vasile Palade'), arxiv.Result.Author('Matthew England'), arxiv.Result.Author('Rahat Iqbal')]",10.1109/ASAR.2018.8480191,2018-02-28 22:46:19+00:00,"The complexities of Arabic language in morphology, orthography and dialects
+makes sentiment analysis for Arabic more challenging. Also, text feature
+extraction from short messages like tweets, in order to gauge the sentiment,
+makes this task even more difficult. In recent years, deep neural networks were
+often employed and showed very good results in sentiment classification and
+natural language processing applications. Word embedding, or word distributing
+approach, is a current and powerful tool to capture together the closest words
+from a contextual text. In this paper, we describe how we construct Word2Vec
+models from a large Arabic corpus obtained from ten newspapers in different
+Arab countries. By applying different machine learning algorithms and
+convolutional neural networks with different text feature selections, we report
+improved accuracy of sentiment classification (91%-95%) on our publicly
+available Arabic language health sentiment dataset [1]","Proc. 2nd International Workshop on Arabic and Derived Script
+  Analysis and Recognition (ASAR '18), pp. 13-18. IEEE, 2018",cs.CL,"['cs.CL', 'I.2.7; I.2.6']",http://arxiv.org/abs/1803.00124v2,both,4,0.9957,"model, task, text, work, base, project, key, paper, feature, method","['grow', 'body', 'research', 'arabic', 'recent', 'year', 'example', 'orthography', 'dialect', 'make', 'sentiment', 'analysis', 'arabic', 'challenging', 'report', 'improve', 'accuracy', 'sentiment', 'different', 'text', 'feature', 'selection', 'way', 'feature', 'use', 'classify', 'publicly', 'available', 'arabic', 'machine', 'learning', 'classifier', 'paper', 'first', 'overview', 'relate', 'recent', 'work', 'powerful', 'tool', 'capture', 'together', 'close', 'word', 'sentiment', 'analysis']"
+26,1705.07008v1.pdf, a lightweight regression method to inferativelypsycholinguistic properties for brazilian portuguese has been used in various apheticalproaches to natural language processingtasks such as astextsimplificationand readabilityassessment the resulting resourcecontains26874wordsinbpannotated with 1v800705071vixra thecorrelationsbetweenthepropertiesinferredareclosetothoseobtainedbyreprivatlated works,A Lightweight Regression Method to Infer Psycholinguistic Properties for Brazilian Portuguese,http://arxiv.org/pdf/1705.07008v1,"[arxiv.Result.Author('Leandro B. dos Santos'), arxiv.Result.Author('Magali S. Duran'), arxiv.Result.Author('Nathan S. Hartmann'), arxiv.Result.Author('Arnaldo Candido Jr.'), arxiv.Result.Author('Gustavo H. Paetzold'), arxiv.Result.Author('Sandra M. Aluisio')]",,2017-05-19 14:17:31+00:00,"Psycholinguistic properties of words have been used in various approaches to
+Natural Language Processing tasks, such as text simplification and readability
+assessment. Most of these properties are subjective, involving costly and
+time-consuming surveys to be gathered. Recent approaches use the limited
+datasets of psycholinguistic properties to extend them automatically to large
+lexicons. However, some of the resources used by such approaches are not
+available to most languages. This study presents a method to infer
+psycholinguistic properties for Brazilian Portuguese (BP) using regressors
+built with a light set of features usually available for less resourced
+languages: word length, frequency lists, lexical databases composed of school
+dictionaries and word embedding models. The correlations between the properties
+inferred are close to those obtained by related works. The resulting resource
+contains 26,874 words in BP annotated with concreteness, age of acquisition,
+imageability and subjective frequency.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1705.07008v1,both,4,0.9804,"model, task, text, work, base, project, key, paper, feature, method","['regression', 'method', 'property', 'brazilian', 'use', 'various', 'processingtask', 'result', 'vixra', 'work']"
+27,1703.10242v1.pdf, a novel approach to teaching parallel and distributed computing concepts using a memebased programming language the lolcode language has been used in a number of undergraduate computer science courses as an introductory computer science course the language has not evolved much since its original specification was developed and resembled the language used in the proposed language used for the lolcat meme which includes photos of cats with parallel and distributed lolcode applications on the subject matter the extensions enable a reductionist approach using humor is very software to scale from inexpensive lowpower parallel to the largest supercomputers,I CAN HAS SUPERCOMPUTER? A Novel Approach to Teaching Parallel and Distributed Computing Concepts Using a Meme-Based Programming Language,http://arxiv.org/pdf/1703.10242v1,"[arxiv.Result.Author('David Richie'), arxiv.Result.Author('James Ross')]",,2017-03-29 20:42:28+00:00,"A novel approach is presented to teach the parallel and distributed computing
+concepts of synchronization and remote memory access. The single program
+multiple data (SPMD) partitioned global address space (PGAS) model presented in
+this paper uses a procedural programming language appealing to undergraduate
+students. We propose that the amusing nature of the approach may engender
+creativity and interest using these concepts later in more sober environments.
+Specifically, we implement parallel extensions to LOLCODE within a
+source-to-source compiler sufficient for the development of parallel and
+distributed algorithms normally implemented using conventional high-performance
+computing languages and APIs.",,cs.DC,"['cs.DC', 'cs.PL']",http://arxiv.org/abs/1703.10242v1,both,0,0.9959,"use, model, semantic, task, framework, system, word, propose, lexical, work","['novel', 'teaching', 'parallel', 'distribute', 'computing', 'concept', 'use', 'memebase', 'programming', 'lolcode', 'use', 'number', 'undergraduate', 'computer', 'science', 'course', 'computer', 'science', 'course', 'evolve', 'much', 'original', 'specification', 'develop', 'resemble', 'use', 'propose', 'use', 'include', 'photo', 'cat', 'parallel', 'distribute', 'lolcode', 'application', 'subject', 'matter', 'extension', 'enable', 'reductionist', 'use', 'humor', 'software', 'scale', 'inexpensive', 'lowpower', 'parallel', 'large', 'supercomputer']"
+28,1607.04606v2.pdf, in the neural nujnetwork community collobert and weston 2008 trained on proposed to learn word embeddings using a feedcentric large unlabeled corpora are useful for many 91yearoldneuralnetwork bypredictingawordbased natural language processing tasks in this paper we show that our vectors achieve corpus making it difficult to learn good word repressive stateoftheart performanceonthesetasks our method is fast allow structure of words which is an important limitation,Enriching Word Vectors with Subword Information,http://arxiv.org/pdf/1607.04606v2,"[arxiv.Result.Author('Piotr Bojanowski'), arxiv.Result.Author('Edouard Grave'), arxiv.Result.Author('Armand Joulin'), arxiv.Result.Author('Tomas Mikolov')]",,2016-07-15 18:27:55+00:00,"Continuous word representations, trained on large unlabeled corpora are
+useful for many natural language processing tasks. Popular models that learn
+such representations ignore the morphology of words, by assigning a distinct
+vector to each word. This is a limitation, especially for languages with large
+vocabularies and many rare words. In this paper, we propose a new approach
+based on the skipgram model, where each word is represented as a bag of
+character $n$-grams. A vector representation is associated to each character
+$n$-gram; words being represented as the sum of these representations. Our
+method is fast, allowing to train models on large corpora quickly and allows us
+to compute word representations for words that did not appear in the training
+data. We evaluate our word representations on nine different languages, both on
+word similarity and analogy tasks. By comparing to recently proposed
+morphological word representations, we show that our vectors achieve
+state-of-the-art performance on these tasks.",,cs.CL,"['cs.CL', 'cs.LG']",http://arxiv.org/abs/1607.04606v2,both,1,0.9927,"model, task, use, propose, write, paper, system, neural, set, base","['nujnetwork', 'community', 'train', 'propose', 'learn', 'embedding', 'use', 'feedcentric', 'large', 'unlabele', 'useful', 'many', 'task', 'paper', 'vector', 'achieve', 'make', 'difficult', 'learn', 'good', 'repressive', 'stateoftheart', 'method', 'fast', 'allow', 'structure', 'word', 'important', 'limitation']"
+29,1603.08079v1.pdf, in this work we focus on the problem of grounding languageinthevisualmodality we present a novel thistypeofinferenceisfretaskforgrounded languageunderstanding we introduce a new multimodal corophobicchildsnow1972 containing ambiguous sentences we demonstrate how such a visual scene may in fact not be sufficient for a legitimate model can be adjusted to recognize a correct understanding of the relfledged interpretations of the same underevant visual content we use a new corpus lava language and vision ambiguities,Do You See What I Mean? Visual Resolution of Linguistic Ambiguities,http://arxiv.org/pdf/1603.08079v1,"[arxiv.Result.Author('Yevgeni Berzak'), arxiv.Result.Author('Andrei Barbu'), arxiv.Result.Author('Daniel Harari'), arxiv.Result.Author('Boris Katz'), arxiv.Result.Author('Shimon Ullman')]",,2016-03-26 06:49:33+00:00,"Understanding language goes hand in hand with the ability to integrate
+complex contextual information obtained via perception. In this work, we
+present a novel task for grounded language understanding: disambiguating a
+sentence given a visual scene which depicts one of the possible interpretations
+of that sentence. To this end, we introduce a new multimodal corpus containing
+ambiguous sentences, representing a wide range of syntactic, semantic and
+discourse ambiguities, coupled with videos that visualize the different
+interpretations for each sentence. We address this task by extending a vision
+model which determines if a sentence is depicted by a video. We demonstrate how
+such a model can be adjusted to recognize different interpretations of the same
+underlying sentence, allowing to disambiguate sentences in a unified fashion
+across the different ambiguity types.","Conference on Empirical Methods in Natural Language Processing
+  (EMNLP), 2015, pages 1477--1487",cs.CV,"['cs.CV', 'cs.AI', 'cs.CL']",http://arxiv.org/abs/1603.08079v1,both,2,0.9925,"system, lithium, lm, usage, sentence, user, rich, free, learn, content","['work', 'focus', 'problem', 'ground', 'present', 'novel', 'introduce', 'new', 'multimodal', 'contain', 'ambiguous', 'sentence', 'demonstrate', 'visual', 'scene', 'fact', 'sufficient', 'legitimate', 'model', 'adjust', 'recognize', 'correct', 'understanding', 'relfledge', 'interpretation', 'underevant', 'visual', 'content', 'new', 'ambiguity']"
+30,1608.00789v1.pdf, new word analogy corpus for exploring embeddings of czech words word embedding is the name for techniques in nlp natural language processing the word embedding methods word2vec and glove significantly outperform other methods czech has seven cases and three genders theselanguages are highlyinflected and have a relatively free word order thecorpus is available for users in the search community it is available at httpwwwzcuczcnnorgcnnsvobiklbrychcin,New word analogy corpus for exploring embeddings of Czech words,http://arxiv.org/pdf/1608.00789v1,"[arxiv.Result.Author('Lukáš Svoboda'), arxiv.Result.Author('Tomáš Brychcín')]",,2016-08-02 12:31:06+00:00,"The word embedding methods have been proven to be very useful in many tasks
+of NLP (Natural Language Processing). Much has been investigated about word
+embeddings of English words and phrases, but only little attention has been
+dedicated to other languages.
+  Our goal in this paper is to explore the behavior of state-of-the-art word
+embedding methods on Czech, the language that is characterized by very rich
+morphology. We introduce new corpus for word analogy task that inspects
+syntactic, morphosyntactic and semantic properties of Czech words and phrases.
+We experiment with Word2Vec and GloVe algorithms and discuss the results on
+this corpus. The corpus is available for the research community.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1608.00789v1,both,4,0.9931,"model, task, text, work, base, project, key, paper, feature, method","['new', 'analogy', 'corpus', 'explore', 'embedding', 'czech', 'word', 'embed', 'name', 'technique', 'embed', 'method', 'significantly', 'outperform', 'method', 'czech', 'case', 'gender', 'theselanguage', 'highlyinflecte', 'relatively', 'free', 'order', 'thecorpus', 'available', 'user', 'search', 'community', 'available']"
+31,1111.5293v1.pdf, the problem of tagging in natural language processing is to find a way to tag every word in a text as a meticulous part of speech for text parsing information extraction text review and text review the basic idea is to apply a set of rules on clinical sentences and machine translation pos tagging is a very difficult task as words are ambiguous and each word can consequently be an important preprocessing task for language processing the paper describes a rule based rulebased tagger for homoeopathy clinical language,Rule based Part of speech Tagger for Homoeopathy Clinical realm,http://arxiv.org/pdf/1111.5293v1,"[arxiv.Result.Author('Sanjay K. Dwivedi'), arxiv.Result.Author('Pramod P. Sukhadeve')]",,2011-11-13 18:19:15+00:00,"A tagger is a mandatory segment of most text scrutiny systems, as it
+consigned a s yntax class (e.g., noun, verb, adjective, and adverb) to every
+word in a sentence. In this paper, we present a simple part of speech tagger
+for homoeopathy clinical language. This paper reports about the anticipated
+part of speech tagger for homoeopathy clinical language. It exploit standard
+pattern for evaluating sentences, untagged clinical corpus of 20085 words is
+used, from which we had selected 125 sentences (2322 tokens). The problem of
+tagging in natural language processing is to find a way to tag every word in a
+text as a meticulous part of speech. The basic idea is to apply a set of rules
+on clinical sentences and on each word, Accuracy is the leading factor in
+evaluating any POS tagger so the accuracy of proposed tagger is also conversed.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1111.5293v1,both,4,0.9954,"model, task, text, work, base, project, key, paper, feature, method","['problem', 'tag', 'find', 'way', 'tag', 'text', 'meticulous', 'part', 'speech', 'text', 'parse', 'information', 'extraction', 'text', 'review', 'text', 'review', 'basic', 'idea', 'apply', 'set', 'rule', 'clinical', 'sentence', 'machine', 'translation', 'pos', 'tag', 'difficult', 'task', 'word', 'ambiguous', 'consequently', 'important', 'preprocesse', 'task', 'paper', 'describe', 'rule', 'base', 'rulebase', 'tagger', 'clinical']"
+32,1506.09107v2.pdf, a complex network approach to stylometry could boost the performance of textual classification task using a fuzzy classification strategy i show that the topological properties extracted from texts complement the traditional text classification strategy in several cases the performanceobtainedwithhybridapproaches lcscoutperformed the results obtained when only traditional or networked methods were used because the proposed model is generic the framework devised here could be used to study similar textual applications where the topology plays a pivotal role in the description of interacting agents,A complex network approach to stylometry,http://arxiv.org/pdf/1506.09107v2,[arxiv.Result.Author('Diego R. Amancio')],10.1371/journal.pone.0136076,2015-06-30 14:32:30+00:00,"Statistical methods have been widely employed to study the fundamental
+properties of language. In recent years, methods from complex and dynamical
+systems proved useful to create several language models. Despite the large
+amount of studies devoted to represent texts with physical models, only a
+limited number of studies have shown how the properties of the underlying
+physical systems can be employed to improve the performance of natural language
+processing tasks. In this paper, I address this problem by devising complex
+networks methods that are able to improve the performance of current
+statistical methods. Using a fuzzy classification strategy, I show that the
+topological properties extracted from texts complement the traditional textual
+description. In several cases, the performance obtained with hybrid approaches
+outperformed the results obtained when only traditional or networked methods
+were used. Because the proposed model is generic, the framework devised here
+could be straightforwardly used to study similar textual applications where the
+topology plays a pivotal role in the description of the interacting agents.","PLoS ONE 10(8): e0136076, 2015",cs.CL,['cs.CL'],http://arxiv.org/abs/1506.09107v2,both,3,0.9951,"use, method, sentence, research, classification, task, present, application, learn, model","['complex', 'network', 'stylometry', 'boost', 'performance', 'textual', 'classification', 'task', 'use', 'fuzzy', 'classification', 'strategy', 'topological', 'property', 'extract', 'complement', 'traditional', 'text', 'classification', 'strategy', 'several', 'case', 'result', 'obtain', 'traditional', 'networked', 'method', 'use', 'propose', 'model', 'generic', 'framework', 'devise', 'use', 'study', 'similar', 'textual', 'application', 'topology', 'play', 'pivotal', 'role', 'description', 'interact', 'agent']"
+33,0802.4326v1.pdf, the generation of textual entailment with nlml in an intelligentiodialogue system for language learning csiec the system is based on an interactive webbased humancomputer dialogue system with natural lanentailed hypothesis it has been put into free usage in the free usage of the internet and has been enriched through the interaction between the user and the robot the generationtcid198h is true if t entails h and this relationship gte is critical to the project csiec paper,The Generation of Textual Entailment with NLML in an Intelligent Dialogue system for Language Learning CSIEC,http://arxiv.org/pdf/0802.4326v1,[arxiv.Result.Author('Jiyou Jia')],,2008-02-29 06:16:29+00:00,"This research report introduces the generation of textual entailment within
+the project CSIEC (Computer Simulation in Educational Communication), an
+interactive web-based human-computer dialogue system with natural language for
+English instruction. The generation of textual entailment (GTE) is critical to
+the further improvement of CSIEC project. Up to now we have found few
+literatures related with GTE. Simulating the process that a human being learns
+English as a foreign language we explore our naive approach to tackle the GTE
+problem and its algorithm within the framework of CSIEC, i.e. rule annotation
+in NLML, pattern recognition (matching), and entailment transformation. The
+time and space complexity of our algorithm is tested with some entailment
+examples. Further works include the rules annotation based on the English
+textbooks and a GUI interface for normal users to edit the entailment rules.",,cs.CL,"['cs.CL', 'cs.AI', 'cs.CY']",http://arxiv.org/abs/0802.4326v1,both,2,0.9933,"system, lithium, lm, usage, sentence, user, rich, free, learn, content","['generation', 'textual', 'entailment', 'nlml', 'system', 'learn', 'csiec', 'system', 'base', 'interactive', 'webbase', 'humancomputer', 'dialogue', 'system', 'lanentaile', 'hypothesis', 'put', 'free', 'usage', 'free', 'usage', 'internet', 'enrich', 'interaction', 'user', 'robot', 'generationtcid', 'true', 'entail', 'relationship', 'gte', 'critical', 'project', 'paper']"
+34,1911.02290v1.pdf, enriching conversation context in retrievalbased chatbots can be improved with pretrained transformers pretrained language models have had a resounding impact on the field of natural language processing these models consist of language models usually consist of stateoftheart models and can be used in various tasks including sequencematching and informacentric retrieval tasks we use these models to create biencoders that perform wordbyword matching over the words in the input pair and compare the resulting vectors,Enriching Conversation Context in Retrieval-based Chatbots,http://arxiv.org/pdf/1911.02290v1,"[arxiv.Result.Author('Amir Vakili Tahami'), arxiv.Result.Author('Azadeh Shakery')]",,2019-11-06 10:24:45+00:00,"Work on retrieval-based chatbots, like most sequence pair matching tasks, can
+be divided into Cross-encoders that perform word matching over the pair, and
+Bi-encoders that encode the pair separately. The latter has better performance,
+however since candidate responses cannot be encoded offline, it is also much
+slower. Lately, multi-layer transformer architectures pre-trained as language
+models have been used to great effect on a variety of natural language
+processing and information retrieval tasks. Recent work has shown that these
+language models can be used in text-matching scenarios to create Bi-encoders
+that perform almost as well as Cross-encoders while having a much faster
+inference speed. In this paper, we expand upon this work by developing a
+sequence matching architecture that %takes into account contexts in the
+training dataset at inference time. utilizes the entire training set as a
+makeshift knowledge-base during inference. We perform detailed experiments
+demonstrating that this architecture can be used to further improve Bi-encoders
+performance while still maintaining a relatively high inference speed.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1911.02290v1,both,1,0.9946,"model, task, use, propose, write, paper, system, neural, set, base","['enrich', 'conversation', 'context', 'retrievalbase', 'chatbot', 'improve', 'pretraine', 'transformer', 'pretraine', 'model', 'resound', 'impact', 'field', 'model', 'consist', 'model', 'usually', 'consist', 'stateoftheart', 'model', 'use', 'various', 'task', 'include', 'informacentric', 'retrieval', 'task', 'model', 'create', 'biencoder', 'perform', 'wordbyword', 'matching', 'word', 'input', 'pair', 'compare', 'result', 'vector']"
+35,1909.09779v1.pdf, selfattention based endtoend hindienglish the primary target of informationdriven machine interpretation is to decipher concealed source language given that the frameworks take in interpretation in interpretation from the framework of deeplearningcomparitive analysis of human language deeplearningapproacheshavesurpassedfactualstrategiesinpracticallyallubfieldsofmt and haveturnedintothedefactotechniqueinbothscholarlyworldjustasinthebusiness asamajoraspectofthistheorywewilltalkaboutthetwospaceswheredeeplearninghasbeensignificantlyutilizedinmt,Self-attention based end-to-end Hindi-English Neural Machine Translation,http://arxiv.org/pdf/1909.09779v1,"[arxiv.Result.Author('Siddhant Srivastava'), arxiv.Result.Author('Ritu Tiwari')]",,2019-09-21 06:16:52+00:00,"Machine Translation (MT) is a zone of concentrate in Natural Language
+processing which manages the programmed interpretation of human language,
+starting with one language then onto the next by the PC. Having a rich research
+history spreading over about three decades, Machine interpretation is a
+standout amongst the most looked for after region of research in the
+computational linguistics network. As a piece of this current ace's proposal,
+the fundamental center examines the Deep-learning based strategies that have
+gained critical ground as of late and turning into the de facto strategy in MT.
+We would like to point out the recent advances that have been put forward in
+the field of Neural Translation models, different domains under which NMT has
+replaced conventional SMT models and would also like to mention future avenues
+in the field. Consequently, we propose an end-to-end self-attention transformer
+network for Neural Machine Translation, trained on Hindi-English parallel
+corpus and compare the model's efficiency with other state of art models like
+encoder-decoder and attention-based encoder-decoder neural models on the basis
+of BLEU. We conclude this paper with a comparative analysis of the three
+proposed models.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1909.09779v1,both,1,0.5533,"model, task, use, propose, write, paper, system, neural, set, base","['base', 'hindienglish', 'primary', 'target', 'machine', 'interpretation', 'decipher', 'conceal', 'source', 'give', 'framework', 'take', 'interpretation', 'interpretation', 'framework', 'analysis', 'human']"
+36,1909.09482v1.pdf, the current stateoftheart natural language processing nlp neural network architectures are used in this work we 81compare the results with more traditional methods such as bag of words bow and long short term memorylstmnetworks weelucidatethenetworkarchitectures ofbertandxlnet usingclearnotationanddiagramsandcommarmentandyarnotationsand we also consider aes to be an area of nlp in which another type of dynamic network is ubiquitously used,Language models and Automated Essay Scoring,http://arxiv.org/pdf/1909.09482v1,"[arxiv.Result.Author('Pedro Uria Rodriguez'), arxiv.Result.Author('Amir Jafari'), arxiv.Result.Author('Christopher M. Ormerod')]",,2019-09-18 18:50:18+00:00,"In this paper, we present a new comparative study on automatic essay scoring
+(AES). The current state-of-the-art natural language processing (NLP) neural
+network architectures are used in this work to achieve above human-level
+accuracy on the publicly available Kaggle AES dataset. We compare two powerful
+language models, BERT and XLNet, and describe all the layers and network
+architectures in these models. We elucidate the network architectures of BERT
+and XLNet using clear notation and diagrams and explain the advantages of
+transformer architectures over traditional recurrent neural network
+architectures. Linear algebra notation is used to clarify the functions of
+transformers and attention mechanisms. We compare the results with more
+traditional methods, such as bag of words (BOW) and long short term memory
+(LSTM) networks.",,cs.CL,"['cs.CL', 'cs.LG', 'stat.ML']",http://arxiv.org/abs/1909.09482v1,both,0,0.9923,"use, model, semantic, task, framework, system, word, propose, lexical, work","['current', 'stateoftheart', 'neural', 'network', 'architecture', 'use', 'work', 'compare', 'result', 'traditional', 'method', 'bag', 'word', 'bow', 'long', 'short', 'term', 'ofbertandxlnet', 'also', 'consider', 'area', 'type', 'dynamic', 'network', 'ubiquitously', 'use']"
+37,1909.00453v2.pdf, topics to avoid demoting latent confounds in text classification we introduce a new method for representing latent confounds in text classification systems we find that asesfoundinthetrainingdataexhibits arectlabel butislesspronetousing information about theconfound the aim of this task is to discover stylistic features present in the input that are indicative of the aunaissanceby predicting both the label of the input text l1id and l2 the test set end up learning topical features 412 which are confounds of the prediction task weproposeamethod that ond language,Topics to Avoid: Demoting Latent Confounds in Text Classification,http://arxiv.org/pdf/1909.00453v2,"[arxiv.Result.Author('Sachin Kumar'), arxiv.Result.Author('Shuly Wintner'), arxiv.Result.Author('Noah A. Smith'), arxiv.Result.Author('Yulia Tsvetkov')]",,2019-09-01 19:18:44+00:00,"Despite impressive performance on many text classification tasks, deep neural
+networks tend to learn frequent superficial patterns that are specific to the
+training data and do not always generalize well. In this work, we observe this
+limitation with respect to the task of native language identification. We find
+that standard text classifiers which perform well on the test set end up
+learning topical features which are confounds of the prediction task (e.g., if
+the input text mentions Sweden, the classifier predicts that the author's
+native language is Swedish). We propose a method that represents the latent
+topical confounds and a model which ""unlearns"" confounding features by
+predicting both the label of the input text and the confound; but we train the
+two predictors adversarially in an alternating fashion to learn a text
+representation that predicts the correct label but is less prone to using
+information about the confound. We show that this model generalizes better and
+learns features that are indicative of the writing style rather than the
+content.",,cs.LG,"['cs.LG', 'cs.CL', 'stat.ML']",http://arxiv.org/abs/1909.00453v2,both,0,0.7343,"use, model, semantic, task, framework, system, word, propose, lexical, work","['topic', 'avoid', 'demote', 'latent', 'confound', 'text', 'classification', 'introduce', 'new', 'method', 'represent', 'latent', 'confound', 'text', 'classification', 'system', 'find', 'arectlabel', 'information', 'aim', 'task', 'discover', 'stylistic', 'feature', 'present', 'input', 'indicative', 'predict', 'label', 'input', 'text', 'i', 'test', 'set', 'end', 'learn', 'topical', 'feature', 'confound', 'prediction', 'task', 'ond']"
+38,1909.01792v2.pdf, in this paper we take a languageagnosticapproachtoimprovingrecurrentneuralnetworksrnnrumelhartetal1988 which still lack the generalization and systematicity required we proposeanextensiontothevenerablelongshorttermmemoryintheformof naj najmutualgatingofthe current input and the previous output thismechanismaffords themodelling ofaricherspace ofinteractions between input and their context,Mogrifier LSTM,http://arxiv.org/pdf/1909.01792v2,"[arxiv.Result.Author('Gábor Melis'), arxiv.Result.Author('Tomáš Kočiský'), arxiv.Result.Author('Phil Blunsom')]",,2019-09-04 13:32:23+00:00,"Many advances in Natural Language Processing have been based upon more
+expressive models for how inputs interact with the context in which they occur.
+Recurrent networks, which have enjoyed a modicum of success, still lack the
+generalization and systematicity ultimately required for modelling language. In
+this work, we propose an extension to the venerable Long Short-Term Memory in
+the form of mutual gating of the current input and the previous output. This
+mechanism affords the modelling of a richer space of interactions between
+inputs and their context. Equivalently, our model can be viewed as making the
+transition function given by the LSTM context-dependent. Experiments
+demonstrate markedly improved generalization on language modelling in the range
+of 3-4 perplexity points on Penn Treebank and Wikitext-2, and 0.01-0.05 bpc on
+four character-based datasets. We establish a new state of the art on all
+datasets with the exception of Enwik8, where we close a large gap between the
+LSTM and Transformer models.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1909.01792v2,both,1,0.9877,"model, task, use, propose, write, paper, system, neural, set, base","['paper', 'take', 'still', 'lack', 'generalization', 'systematicity', 'require', 'naj', 'current', 'input', 'previous', 'output', 'themodelling', 'ofaricherspace', 'ofinteraction', 'input', 'context']"
+39,1908.07721v2.pdf, chinese language model has achieved excellent results in more and more natural language processing tasks however the feature extraction ability of the bidirectional long short term memory network does not achieve the best effect we present a focused attention model for the joint entityehrsand relation extraction task our model integrates wellknown2222bertlanguagemodelintojointlearningthroughdynamicrangerangeattention mechanism thus improving the feature representa however compared with the language models that benefit,Fine-tuning BERT for Joint Entity and Relation Extraction in Chinese Medical Text,http://arxiv.org/pdf/1908.07721v2,"[arxiv.Result.Author('Kui Xue'), arxiv.Result.Author('Yangming Zhou'), arxiv.Result.Author('Zhiyuan Ma'), arxiv.Result.Author('Tong Ruan'), arxiv.Result.Author('Huanhuan Zhang'), arxiv.Result.Author('Ping He')]",,2019-08-21 06:56:08+00:00,"Entity and relation extraction is the necessary step in structuring medical
+text. However, the feature extraction ability of the bidirectional long short
+term memory network in the existing model does not achieve the best effect. At
+the same time, the language model has achieved excellent results in more and
+more natural language processing tasks. In this paper, we present a focused
+attention model for the joint entity and relation extraction task. Our model
+integrates well-known BERT language model into joint learning through dynamic
+range attention mechanism, thus improving the feature representation ability of
+shared parameter layer. Experimental results on coronary angiography texts
+collected from Shuguang Hospital show that the F1-score of named entity
+recognition and relation classification tasks reach 96.89% and 88.51%, which
+are better than state-of-the-art methods 1.65% and 1.22%, respectively.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1908.07721v2,both,4,0.9945,"model, task, text, work, base, project, key, paper, feature, method","['chinese', 'model', 'achieve', 'excellent', 'result', 'task', 'feature', 'extraction', 'ability', 'bidirectional', 'long', 'short', 'term', 'memory', 'network', 'achieve', 'good', 'effect', 'present', 'focus', 'attention', 'model', 'relation', 'extraction', 'task', 'model', 'integrate', 'wellknown', 'mechanism', 'thus', 'improve', 'feature', 'representa', 'compare', 'model', 'benefit']"
+40,1908.09716v1.pdf, uniblock scoring and filtering corpuswith unicode block information it is possi                method uniblock1 toovercomethisprob bletolearnaprobabilisticmodel which is trained in a good property that blocks are unsupervised supervised manner tackles the illegal characbyorigin problem it can also be easily applied to other nlp tasks we present experimental results on sentiment analysis sa language modeling mt and removal of sentences with ille lm,uniblock: Scoring and Filtering Corpus with Unicode Block Information,http://arxiv.org/pdf/1908.09716v1,"[arxiv.Result.Author('Yingbo Gao'), arxiv.Result.Author('Weiyue Wang'), arxiv.Result.Author('Hermann Ney')]",,2019-08-26 14:55:03+00:00,"The preprocessing pipelines in Natural Language Processing usually involve a
+step of removing sentences consisted of illegal characters. The definition of
+illegal characters and the specific removal strategy depend on the task,
+language, domain, etc, which often lead to tiresome and repetitive scripting of
+rules. In this paper, we introduce a simple statistical method, uniblock, to
+overcome this problem. For each sentence, uniblock generates a fixed-size
+feature vector using Unicode block information of the characters. A Gaussian
+mixture model is then estimated on some clean corpus using variational
+inference. The learned model can then be used to score sentences and filter
+corpus. We present experimental results on Sentiment Analysis, Language
+Modeling and Machine Translation, and show the simplicity and effectiveness of
+our method.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1908.09716v1,both,3,0.9919,"use, method, sentence, research, classification, task, present, application, learn, model","['uniblock', 'scoring', 'filter', 'information', 'train', 'good', 'property', 'block', 'unsupervise', 'supervised', 'manner', 'tackle', 'illegal', 'characbyorigin', 'problem', 'also', 'easily', 'apply', 'task', 'present', 'experimental', 'result', 'sentiment', 'analysis', 'model', 'removal', 'sentence']"
+41,1908.06083v1.pdf, the detection of trolls in public fo vant to the  commurums galangarca et al 2016 and the build it break it fix itapproach are twoexamplesthatshow to emit offensive language adversarial attacks on the tay chatbot led to the developers shutting down offensive behavior on the part of humans we show that such an approach provides more robust system soverthefixingiterations such actionsyandotheroboutterances can be motivated to cause harm,Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack,http://arxiv.org/pdf/1908.06083v1,"[arxiv.Result.Author('Emily Dinan'), arxiv.Result.Author('Samuel Humeau'), arxiv.Result.Author('Bharath Chintagunta'), arxiv.Result.Author('Jason Weston')]",,2019-08-17 18:34:11+00:00,"The detection of offensive language in the context of a dialogue has become
+an increasingly important application of natural language processing. The
+detection of trolls in public forums (Gal\'an-Garc\'ia et al., 2016), and the
+deployment of chatbots in the public domain (Wolf et al., 2017) are two
+examples that show the necessity of guarding against adversarially offensive
+behavior on the part of humans. In this work, we develop a training scheme for
+a model to become robust to such human attacks by an iterative build it, break
+it, fix it strategy with humans and models in the loop. In detailed experiments
+we show this approach is considerably more robust than previous systems.
+Further, we show that offensive language used within a conversation critically
+depends on the dialogue context, and cannot be viewed as a single sentence
+offensive detection task as in most previous work. Our newly collected tasks
+and methods will be made open source and publicly available.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1908.06083v1,both,3,0.9886,"use, method, sentence, research, classification, task, present, application, learn, model","['troll', 'public', 'commurum', 'fix', 'offensive', 'adversarial', 'attack', 'lead', 'developer', 'shut', 'offensive', 'behavior', 'part', 'human', 'provide', 'robust', 'system', 'motivate', 'harm']"
+42,1906.11565v2.pdf, emotionxku bertmax based contextual emotion classifier we propose a contextual emotion classifier based on the emotion of each uttercentricanceinadialogue the proposed model leverages the selfcentricattention based transferable language model and ititstoolateimwithsomebodyelseimhappy we will discuss the proposed linestion emotionlinestion and emotion x in detail in detail,EmotionX-KU: BERT-Max based Contextual Emotion Classifier,http://arxiv.org/pdf/1906.11565v2,"[arxiv.Result.Author('Kisu Yang'), arxiv.Result.Author('Dongyub Lee'), arxiv.Result.Author('Taesun Whang'), arxiv.Result.Author('Seolhwa Lee'), arxiv.Result.Author('Heuiseok Lim')]",,2019-06-27 11:46:48+00:00,"We propose a contextual emotion classifier based on a transferable language
+model and dynamic max pooling, which predicts the emotion of each utterance in
+a dialogue. A representative emotion analysis task, EmotionX, requires to
+consider contextual information from colloquial dialogues and to deal with a
+class imbalance problem. To alleviate these problems, our model leverages the
+self-attention based transferable language model and the weighted cross entropy
+loss. Furthermore, we apply post-training and fine-tuning mechanisms to enhance
+the domain adaptability of our model and utilize several machine learning
+techniques to improve its performance. We conduct experiments on two
+emotion-labeled datasets named Friends and EmotionPush. As a result, our model
+outperforms the previous state-of-the-art model and also shows competitive
+performance in the EmotionX 2019 challenge. The code will be available in the
+Github page.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1906.11565v2,both,4,0.9905,"model, task, text, work, base, project, key, paper, feature, method","['base', 'contextual', 'emotion', 'classifier', 'contextual', 'emotion', 'classifier', 'base', 'emotion', 'propose', 'model', 'leverage', 'base', 'transferable', 'model', 'discuss', 'propose', 'linestion', 'emotion', 'detail', 'detail']"
+43,1906.10816v4.pdf, program synthesis and semantic parsing with learned code idioms authors programsynthesistoreallifeprograms require highlevel reasoning and lowlevel implementation details at the same time the first stagegeneratesahighlevelsketchofthethetargetprogram and the secondstagefillsinmissingdetails we evaluatepatoisontwocomplexsemanticparsingdatasets and show that using a learned codeidiomsimprovesthesynthesizersaccuracy,Program Synthesis and Semantic Parsing with Learned Code Idioms,http://arxiv.org/pdf/1906.10816v4,"[arxiv.Result.Author('Richard Shin'), arxiv.Result.Author('Miltiadis Allamanis'), arxiv.Result.Author('Marc Brockschmidt'), arxiv.Result.Author('Oleksandr Polozov')]",,2019-06-26 02:28:10+00:00,"Program synthesis of general-purpose source code from natural language
+specifications is challenging due to the need to reason about high-level
+patterns in the target program and low-level implementation details at the same
+time. In this work, we present PATOIS, a system that allows a neural program
+synthesizer to explicitly interleave high-level and low-level reasoning at
+every generation step. It accomplishes this by automatically mining common code
+idioms from a given corpus, incorporating them into the underlying language for
+neural synthesis, and training a tree-based neural synthesizer to use these
+idioms during code generation. We evaluate PATOIS on two complex semantic
+parsing datasets and show that using learned code idioms improves the
+synthesizer's accuracy.",,cs.LG,"['cs.LG', 'cs.AI', 'cs.CL', 'cs.PL', 'stat.ML']",http://arxiv.org/abs/1906.10816v4,both,0,0.9889,"use, model, semantic, task, framework, system, word, propose, lexical, work","['program', 'synthesis', 'semantic', 'parsing', 'learn', 'code', 'idiom', 'author', 'require', 'highlevel', 'reasoning', 'lowlevel', 'implementation', 'detail', 'time', 'first', 'use', 'learn']"
+44,1906.00424v1.pdf, unilateral contracts such as terms of service play a substantial role in modern digital life we propose the task of summarizing such legal documents in plain english automatic summarization is often used to refactors users reported for not reading these docuduceinformation overload we hope that such a technogeniclegallanguagewouldenableagreaternumprivilegealreadyusers to better understanding of what they are agreeing to we say,Plain English Summarization of Contracts,http://arxiv.org/pdf/1906.00424v1,"[arxiv.Result.Author('Laura Manor'), arxiv.Result.Author('Junyi Jessy Li')]",,2019-06-02 15:27:51+00:00,"Unilateral contracts, such as terms of service, play a substantial role in
+modern digital life. However, few users read these documents before accepting
+the terms within, as they are too long and the language too complicated. We
+propose the task of summarizing such legal documents in plain English, which
+would enable users to have a better understanding of the terms they are
+accepting.
+  We propose an initial dataset of legal text snippets paired with summaries
+written in plain English. We verify the quality of these summaries manually and
+show that they involve heavy abstraction, compression, and simplification.
+Initial experiments show that unsupervised extractive summarization methods do
+not perform well on this task due to the level of abstraction and style
+differences. We conclude with a call for resource and technique development for
+simplification and style transfer for legal language.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1906.00424v1,both,1,0.9932,"model, task, use, propose, write, paper, system, neural, set, base","['unilateral', 'contract', 'term', 'service', 'play', 'substantial', 'role', 'modern', 'digital', 'life', 'propose', 'task', 'summarize', 'legal', 'document', 'plain', 'english', 'automatic', 'summarization', 'often', 'use', 'refactor', 'user', 'report', 'read', 'overload', 'hope', 'well', 'understanding', 'agreeing', 'say']"
+45,1906.03753v2.pdf, outofvocabulary embedding imputation with grounded language kg2vec by graph convolutional networks grounded information has been extensively used to construct a graph from grounded in various nlp tasks to represent realworldbased knowledge we propose a novel approach knowledgegraph lcscscproving imputation which uses grounded inforrepretovectors the method improves pearsons and spear 2016 we evaluate our approach on a range of rare or unseen wordtasks,Out-of-Vocabulary Embedding Imputation with Grounded Language Information by Graph Convolutional Networks,http://arxiv.org/pdf/1906.03753v2,"[arxiv.Result.Author('Ziyi Yang'), arxiv.Result.Author('Chenguang Zhu'), arxiv.Result.Author('Vin Sachidananda'), arxiv.Result.Author('Eric Darve')]",,2019-06-10 01:10:34+00:00,"Due to the ubiquitous use of embeddings as input representations for a wide
+range of natural language tasks, imputation of embeddings for rare and unseen
+words is a critical problem in language processing. Embedding imputation
+involves learning representations for rare or unseen words during the training
+of an embedding model, often in a post-hoc manner. In this paper, we propose an
+approach for embedding imputation which uses grounded information in the form
+of a knowledge graph. This is in contrast to existing approaches which
+typically make use of vector space properties or subword information. We
+propose an online method to construct a graph from grounded information and
+design an algorithm to map from the resulting graphical structure to the space
+of the pre-trained embeddings. Finally, we evaluate our approach on a range of
+rare and unseen word tasks across various domains and show that our model can
+learn better representations. For example, on the Card-660 task our method
+improves Pearson's and Spearman's correlation coefficients upon the
+state-of-the-art by 11% and 17.8% respectively using GloVe embeddings.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1906.03753v2,both,4,0.9943,"model, task, text, work, base, project, key, paper, feature, method","['outofvocabulary', 'embed', 'imputation', 'ground', 'graph', 'convolutional', 'network', 'ground', 'information', 'extensively', 'use', 'construct', 'graph', 'ground', 'various', 'task', 'represent', 'realworldbase', 'knowledge', 'propose', 'novel', 'knowledgegraph', 'lcscscprove', 'imputation', 'use', 'ground', 'method', 'improve', 'pearson', 'spear', 'evaluate', 'range', 'rare', 'unseen', 'wordtask']"
+46,1905.10810v1.pdf, evaluation of basic modules for isolated spelling error correction in polish texts these modules maybefurthercombined withappropriatesolutionsforerrordetectionandcontextawareness combining edit distance with cosine distance of semantic vectors may be suggested for interpretable systems while an lstm particularlyenhancedbyelmoembeddingsseemstoofferthebestrawperformance webegintoaddressthisproblembytestingsomebasicandpromisingmethodsonplewiacorpusofannotatedspellingextracted frompolishwikipedia 9102,Evaluation of basic modules for isolated spelling error correction in Polish texts,http://arxiv.org/pdf/1905.10810v1,[arxiv.Result.Author('Szymon Rutkowski')],,2019-05-26 14:54:52+00:00,"Spelling error correction is an important problem in natural language
+processing, as a prerequisite for good performance in downstream tasks as well
+as an important feature in user-facing applications. For texts in Polish
+language, there exist works on specific error correction solutions, often
+developed for dealing with specialized corpora, but not evaluations of many
+different approaches on big resources of errors. We begin to address this
+problem by testing some basic and promising methods on PlEWi, a corpus of
+annotated spelling extracted from Polish Wikipedia. These modules may be
+further combined with appropriate solutions for error detection and context
+awareness. Following our results, combining edit distance with cosine distance
+of semantic vectors may be suggested for interpretable systems, while an LSTM,
+particularly enhanced by ELMo embeddings, seems to offer the best raw
+performance.","Human Language Technologies as a Challenge for Computer Science
+  and Linguistics. Ed. Zygmunt Vetulani and Patrick Paroubek. Pozna\'n:
+  Wydawnictwo Nauka i Innowacje, 2019. Pp. 173-176",cs.CL,['cs.CL'],http://arxiv.org/abs/1905.10810v1,both,0,0.9905,"use, model, semantic, task, framework, system, word, propose, lexical, work","['evaluation', 'basic', 'module', 'isolate', 'spelling', 'error', 'correction', 'polish', 'text', 'module', 'combine', 'edit', 'distance', 'cosine', 'distance', 'semantic', 'vector', 'suggest', 'interpretable', 'system', 'lstm']"
+47,1907.12412v2.pdf,ernie 20 a continual pretraining framework for language understanding the framework incrementally builds pretraining tasks and then continualmultitasklearning the source codes and pretrained models have inthisframework all thetaskssharethesameencodingnettypenetstructurednettasks works thus making the encoding of lexical syntactic and semantic informationacross differenttaskspossible the framework canincrementallytrainthedistributedrepresentations basedon modeloutperformsbertandxlneton 16tasks,ERNIE 2.0: A Continual Pre-training Framework for Language Understanding,http://arxiv.org/pdf/1907.12412v2,"[arxiv.Result.Author('Yu Sun'), arxiv.Result.Author('Shuohuan Wang'), arxiv.Result.Author('Yukun Li'), arxiv.Result.Author('Shikun Feng'), arxiv.Result.Author('Hao Tian'), arxiv.Result.Author('Hua Wu'), arxiv.Result.Author('Haifeng Wang')]",,2019-07-29 13:25:37+00:00,"Recently, pre-trained models have achieved state-of-the-art results in
+various language understanding tasks, which indicates that pre-training on
+large-scale corpora may play a crucial role in natural language processing.
+Current pre-training procedures usually focus on training the model with
+several simple tasks to grasp the co-occurrence of words or sentences. However,
+besides co-occurring, there exists other valuable lexical, syntactic and
+semantic information in training corpora, such as named entity, semantic
+closeness and discourse relations. In order to extract to the fullest extent,
+the lexical, syntactic and semantic information from training corpora, we
+propose a continual pre-training framework named ERNIE 2.0 which builds and
+learns incrementally pre-training tasks through constant multi-task learning.
+Experimental results demonstrate that ERNIE 2.0 outperforms BERT and XLNet on
+16 tasks including English tasks on GLUE benchmarks and several common tasks in
+Chinese. The source codes and pre-trained models have been released at
+https://github.com/PaddlePaddle/ERNIE.",,cs.CL,['cs.CL'],http://arxiv.org/abs/1907.12412v2,both,0,0.9913,"use, model, semantic, task, framework, system, word, propose, lexical, work","['pretraining', 'framework', 'understanding', 'framework', 'incrementally', 'build', 'pretraine', 'task', 'source', 'code', 'pretraine', 'model', 'inthisframework', 'work', 'thus', 'make', 'encode', 'lexical', 'syntactic', 'semantic', 'framework', 'basedon', 'task']"
+48,1812.06624v1.pdf, the new models achieved considerable improvementthanthecorrespondingpreviousarchitectures but we are dealing with some special ever for our applications we are gradually there were introly attentions were introually with there being more attention to the attention of the attentionbased model a situationoftensorproductswhereoneofthemconsistoevolve ries of tensors that can be utilized for special representationthelowerlevelfeaturesofwholeimageintocaptions,Feature Fusion Effects of Tensor Product Representation on (De)Compositional Network for Caption Generation for Images,http://arxiv.org/pdf/1812.06624v1,[arxiv.Result.Author('Chiranjib Sur')],,2018-12-17 06:24:03+00:00,"Progress in image captioning is gradually getting complex as researchers try
+to generalized the model and define the representation between visual features
+and natural language processing. This work tried to define such kind of
+relationship in the form of representation called Tensor Product Representation
+(TPR) which generalized the scheme of language modeling and structuring the
+linguistic attributes (related to grammar and parts of speech of language)
+which will provide a much better structure and grammatically correct sentence.
+TPR enables better and unique representation and structuring of the feature
+space and will enable better sentence composition from these representations. A
+large part of the different ways of defining and improving these TPR are
+discussed and their performance with respect to the traditional procedures and
+feature representations are evaluated for image captioning application. The new
+models achieved considerable improvement than the corresponding previous
+architectures.",,cs.CV,"['cs.CV', 'cs.CL']",http://arxiv.org/abs/1812.06624v1,both,0,0.99,"use, model, semantic, task, framework, system, word, propose, lexical, work","['new', 'model', 'achieve', 'considerable', 'deal', 'special', 'ever', 'application', 'gradually', 'introly', 'attention', 'introually', 'attention', 'attention', 'attentionbase', 'model', 'rie', 'tensor', 'utilize', 'special']"
+49,1810.00660v1.pdf, aims to build neural network models for the task of errorbased errorcorrection in natural language applications thesis was written at the paris descartes university of mathematics and the university of paris the author expresses his profound gratitude to his parents his wife ioanna and their whole family for their unconditional love their forbearance and for providing continuousencouragement through the process of researching and writing this thesis this accomplishment wouldnothave been possible without them he writes,Attention-based Encoder-Decoder Networks for Spelling and Grammatical Error Correction,http://arxiv.org/pdf/1810.00660v1,[arxiv.Result.Author('Sina Ahmadi')],,2018-09-21 23:47:42+00:00,"Automatic spelling and grammatical correction systems are one of the most
+widely used tools within natural language applications. In this thesis, we
+assume the task of error correction as a type of monolingual machine
+translation where the source sentence is potentially erroneous and the target
+sentence should be the corrected form of the input. Our main focus in this
+project is building neural network models for the task of error correction. In
+particular, we investigate sequence-to-sequence and attention-based models
+which have recently shown a higher performance than the state-of-the-art of
+many language processing problems. We demonstrate that neural machine
+translation models can be successfully applied to the task of error correction.
+  While the experiments of this research are performed on an Arabic corpus, our
+methods in this thesis can be easily applied to any language.",,cs.CL,"['cs.CL', 'cs.AI']",http://arxiv.org/abs/1810.00660v1,both,1,0.993,"model, task, use, propose, write, paper, system, neural, set, base","['aim', 'build', 'neural', 'network', 'model', 'task', 'errorbase', 'errorcorrection', 'application', 'thesis', 'write', 'descarte', 'author', 'express', 'profound', 'gratitude', 'parent', 'family', 'unconditional', 'love', 'forbearance', 'provide', 'process', 'research', 'write', 'thesis', 'accomplishment', 'wouldnothave', 'possible', 'write']"
