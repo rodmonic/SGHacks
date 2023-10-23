@@ -1,0 +1,4 @@
+pdfplumber
+transformers
+torch
+pandas
