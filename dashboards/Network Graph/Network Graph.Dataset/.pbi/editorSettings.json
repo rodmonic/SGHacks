@@ -3,6 +3,5 @@
   "autodetectRelationships": true,
   "parallelQueryLoading": true,
   "typeDetectionEnabled": true,
-  "relationshipImportEnabled": true,
-  "runBackgroundAnalysis": true
+  "relationshipImportEnabled": true
 }
