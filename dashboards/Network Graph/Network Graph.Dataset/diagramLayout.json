@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 263,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 852,
+            "y": 0
+          },
+          "nodeIndex": "Papers",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 361,
+            "y": 207
+          },
+          "nodeIndex": "Authors",
+          "nodeLineageTag": "d03186dd-344f-4d1e-a00c-9e9955354cd3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 370,
+            "y": 54
+          },
+          "nodeIndex": "Categories",
+          "nodeLineageTag": "f51bb37f-9ab4-4668-b440-e6e52b834d0c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 246,
+            "y": 366
+          },
+          "nodeIndex": "Citations",
+          "nodeLineageTag": "c05675d0-7f50-48a2-8ef4-961f9495065a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 890,
+            "y": 97
+          },
+          "nodeIndex": "Papers_all",
+          "nodeLineageTag": "68cf0ab1-4c19-4dde-aff5-188195f58815",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
