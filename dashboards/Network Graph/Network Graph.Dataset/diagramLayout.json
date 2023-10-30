@@ -22,19 +22,6 @@
         },
         {
           "location": {
-            "x": 361,
-            "y": 207
-          },
-          "nodeIndex": "Authors",
-          "nodeLineageTag": "d03186dd-344f-4d1e-a00c-9e9955354cd3",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
             "x": 370,
             "y": 54
           },
@@ -71,6 +58,31 @@
             "width": 234
           },
           "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 894,
+            "y": 268.5
+          },
+          "nodeIndex": "Authors",
+          "nodeLineageTag": "94461db9-df32-422a-9f66-c6ec5d115574",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 361,
+            "y": 207
+          },
+          "nodeIndex": "PaperAuthors",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Papers\",\"Authors\",\"Citations\",\"Categories\",\"Papers_all\"]"
+        "value": "[\"Papers\",\"PaperAuthors\",\"Citations\",\"Categories\",\"Papers_all\",\"Authors\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -41,7 +41,7 @@
     "relationships": [
       {
         "name": "3c03b0d3-7859-4465-8546-4dc71c5bb297",
-        "fromColumn": "Published Date",
+        "fromColumn": "PublishedDate",
         "fromTable": "Papers",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
@@ -49,23 +49,23 @@
       },
       {
         "name": "1af2b6c3-aa97-4198-b34d-fcbfbff1d6ea",
-        "fromColumn": "Paper ID",
+        "fromColumn": "PaperId",
         "fromTable": "Categories",
-        "toColumn": "Paper ID",
+        "toColumn": "PaperId",
         "toTable": "Papers"
       },
       {
         "name": "f5bdbcb4-15ed-4f26-9f7b-5e16f460a7ad",
-        "fromColumn": "Paper ID",
+        "fromColumn": "PaperId",
         "fromTable": "Citations",
-        "toColumn": "Paper ID",
+        "toColumn": "PaperId",
         "toTable": "Papers"
       },
       {
         "name": "d3ba89c5-e7a0-4017-90b4-cb089e8a439f",
         "fromColumn": "Paper ID",
-        "fromTable": "Authors",
-        "toColumn": "Paper ID",
+        "fromTable": "PaperAuthors",
+        "toColumn": "PaperId",
         "toTable": "Papers"
       },
       {
@@ -75,6 +75,30 @@
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_db65f2fc-d306-4e0b-97fe-aa682fdddd02"
+      },
+      {
+        "name": "8b5ec086-dcc3-4da8-a7e3-170c00d61051",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Paper ID",
+        "fromTable": "Papers_all",
+        "toColumn": "PaperId",
+        "toTable": "Papers"
+      },
+      {
+        "name": "997c8edc-38e0-44e7-95ca-768e472d6dd3",
+        "fromColumn": "PublishedDate",
+        "fromTable": "Citations",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_b37c250b-2b0a-4ab9-8a20-bd90fba85b72"
+      },
+      {
+        "name": "01424948-15ab-4f02-923e-3b7b172a35b2",
+        "fromColumn": "AuthorId",
+        "fromTable": "PaperAuthors",
+        "toColumn": "AuthorId",
+        "toTable": "Authors"
       }
     ],
     "sourceQueryCulture": "en-GB",
@@ -106,7 +130,7 @@
             "summarizeBy": "none"
           },
           {
-            "name": "PDF URL",
+            "name": "PdfUrl",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -115,24 +139,11 @@
             ],
             "dataType": "string",
             "lineageTag": "62f51b9b-f07b-4b28-bcf7-2c1352e641f5",
-            "sourceColumn": "PDF URL",
+            "sourceColumn": "PdfUrl",
             "summarizeBy": "none"
           },
           {
-            "name": "DOI",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4f9233b4-8752-4731-bf8f-fb957a57dd82",
-            "sourceColumn": "DOI",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Published Date",
+            "name": "PublishedDate",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -142,7 +153,7 @@
             "dataType": "dateTime",
             "formatString": "General Date",
             "lineageTag": "8b9ed61c-2138-44ba-b49e-bbd3c4ddb15c",
-            "sourceColumn": "Published Date",
+            "sourceColumn": "PublishedDate",
             "summarizeBy": "none",
             "variations": [
               {
@@ -157,7 +168,7 @@
             ]
           },
           {
-            "name": "Primary Category",
+            "name": "PrimaryCategory",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -166,38 +177,11 @@
             ],
             "dataType": "string",
             "lineageTag": "c92f4485-4012-4d8f-bcfa-297fe0dc74bf",
-            "sourceColumn": "Primary Category",
+            "sourceColumn": "PrimaryCategory",
             "summarizeBy": "none"
           },
           {
-            "name": "Entry ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "12af04e9-4ba7-4139-a6d4-69b09af227bc",
-            "sourceColumn": "Entry ID",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Citation Count",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "e756ff43-29bf-487b-a0f3-9117ae74d236",
-            "sourceColumn": "Citation Count",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "Paper ID",
+            "name": "PaperId",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -207,22 +191,21 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "162f649c-e2ee-427f-870a-2af01a7bc622",
-            "sourceColumn": "Paper ID",
+            "sourceColumn": "PaperId",
             "summarizeBy": "none"
           },
           {
-            "name": "Index",
+            "name": "PublishedYear",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "d6f1c5eb-dc9b-4729-b546-fe82785102b6",
-            "sourceColumn": "Index",
-            "summarizeBy": "sum"
+            "dataType": "string",
+            "lineageTag": "7b8dd4de-6e58-4997-a284-f3fca31a2afb",
+            "sourceColumn": "PublishedYear",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "e68dbe4c-75b2-4c0d-8014-1e1b9b4b05e9",
@@ -240,9 +223,13 @@
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Author\", \"Category\", \"Citations\"}),",
                 "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"\", \"Paper ID\"}}),",
                 "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Renamed Columns\",{\"Full Text\", \"Summary\", \"Journal Ref\"}),",
-                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns1\", \"Index\", 0, 1, Int64.Type)",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns1\", \"Index\", 0, 1, Int64.Type),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Added Index\",{{\"Paper ID\", \"PaperId\"}, {\"PDF URL\", \"PdfUrl\"}, {\"Published Date\", \"PublishedDate\"}, {\"Primary Category\", \"PrimaryCategory\"}, {\"Entry ID\", \"EntryId\"}, {\"Citation Count\", \"CitationCount\"}}),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Renamed Columns1\",{\"Index\", \"EntryId\", \"CitationCount\"}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns3\", \"PublishedYear\", each Date.Year([PublishedDate])),",
+                "    #\"Removed Columns4\" = Table.RemoveColumns(#\"Added Custom\",{\"DOI\"})",
                 "in",
-                "    #\"Added Index\""
+                "    #\"Removed Columns4\""
               ],
               "type": "m"
             }
@@ -658,7 +645,7 @@
             "name": "LocalDateTable_5da997dd-fc95-4ee6-a0a7-dc93ca365ebb",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Papers'[Published Date])), 1, 1), Date(Year(MAX('Papers'[Published Date])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('Papers'[PublishedDate])), 1, 1), Date(Year(MAX('Papers'[PublishedDate])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -666,7 +653,7 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "Authors",
+        "name": "PaperAuthors",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -693,23 +680,24 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Author",
+            "name": "AuthorId",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
-            "lineageTag": "30415d8c-d470-499a-966d-211de33ea374",
-            "sourceColumn": "Author",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "82da3f54-bea6-409e-89c1-e14989a8547e",
+            "sourceColumn": "AuthorId",
             "summarizeBy": "none"
           }
         ],
         "lineageTag": "d03186dd-344f-4d1e-a00c-9e9955354cd3",
         "partitions": [
           {
-            "name": "Authors",
+            "name": "PaperAuthors",
             "mode": "import",
             "source": {
               "expression": [
@@ -730,9 +718,14 @@
                 "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Changed Type1\", {\"\"}, \"Attribute\", \"Value\"),",
                 "    #\"Trimmed Text\" = Table.TransformColumns(#\"Unpivoted Columns\",{{\"Value\", Text.Trim, type text}}),",
                 "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Trimmed Text\",{\"Attribute\"}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Value\", \"Author\"}, {\"\", \"Paper ID\"}})",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Value\", \"Author\"}, {\"\", \"Paper ID\"}}),",
+                "    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns\", {\"Author\"}, Authors, {\"Author\"}, \"Authors\", JoinKind.LeftOuter),",
+                "    #\"Expanded Authors\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Authors\", {\"Author\", \"AuthorId\"}, {\"Authors.Author\", \"Authors.AuthorId\"}),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Expanded Authors\",{\"Authors.Author\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns3\",{{\"Authors.AuthorId\", \"AuthorId\"}}),",
+                "    #\"Removed Columns4\" = Table.RemoveColumns(#\"Renamed Columns1\",{\"Author\"})",
                 "in",
-                "    #\"Renamed Columns\""
+                "    #\"Removed Columns4\""
               ],
               "type": "m"
             }
@@ -753,7 +746,7 @@
         ],
         "columns": [
           {
-            "name": "Paper ID",
+            "name": "PaperId",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -763,11 +756,50 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "4a7c43d2-89c3-49d5-a161-a033d11e946e",
-            "sourceColumn": "Paper ID",
+            "sourceColumn": "PaperId",
             "summarizeBy": "none"
           },
           {
-            "name": "Citation Paper ID",
+            "name": "CitationPaperId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55247719-a674-4eea-8cd2-92e4ba3cf6da",
+            "sourceColumn": "CitationPaperId",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "PublishedDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "3d18566c-d717-493f-94e5-5c8bea78c10c",
+            "sourceColumn": "PublishedDate",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_b37c250b-2b0a-4ab9-8a20-bd90fba85b72"
+                },
+                "isDefault": true,
+                "relationship": "997c8edc-38e0-44e7-95ca-768e472d6dd3"
+              }
+            ]
+          },
+          {
+            "name": "PublishedYear",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -775,8 +807,8 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "55247719-a674-4eea-8cd2-92e4ba3cf6da",
-            "sourceColumn": "Citation Paper ID",
+            "lineageTag": "e3ae9339-cdda-438d-a4d9-d24774de352d",
+            "sourceColumn": "PublishedYear",
             "summarizeBy": "none"
           }
         ],
@@ -800,9 +832,19 @@
                 "    #\"Added Custom\" = Table.AddColumn(#\"Replaced Value2\", \"Custom\", each Text.Split([Citations],\",\")),",
                 "    #\"Expanded Custom\" = Table.ExpandListColumn(#\"Added Custom\", \"Custom\"),",
                 "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded Custom\",{\"Citations\"}),",
-                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Custom\", \"Citation Paper ID\"}})",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Custom\", \"Citation Paper ID\"}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Renamed Columns1\",{{\"Citation Paper ID\", Int64.Type}}),",
+                "    #\"Added Custom1\" = Table.AddColumn(#\"Changed Type1\", \"Custom\", each [Paper ID]=[Citation Paper ID]),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Added Custom1\", each ([Custom] = false)),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Custom\"}),",
+                "    #\"Filtered Rows1\" = Table.SelectRows(#\"Removed Columns3\", each ([Citation Paper ID] <> null)),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Filtered Rows1\",{{\"Paper ID\", \"PaperId\"}, {\"Citation Paper ID\", \"CitationPaperId\"}}),",
+                "    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns2\", {\"CitationPaperId\"}, Papers, {\"PaperId\"}, \"Papers\", JoinKind.LeftOuter),",
+                "    #\"Expanded Papers\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Papers\", {\"PublishedDate\"}, {\"Papers.PublishedDate\"}),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Expanded Papers\",{{\"Papers.PublishedDate\", \"PublishedDate\"}}),",
+                "    #\"Added Custom2\" = Table.AddColumn(#\"Renamed Columns3\", \"PublishedYear\", each Date.Year([PublishedDate]))",
                 "in",
-                "    #\"Renamed Columns1\""
+                "    #\"Added Custom2\""
               ],
               "type": "m"
             }
@@ -823,7 +865,7 @@
         ],
         "columns": [
           {
-            "name": "Paper ID",
+            "name": "PaperId",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -833,7 +875,7 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "205cf201-4fe4-428e-b2e9-f517fad72b8a",
-            "sourceColumn": "Paper ID",
+            "sourceColumn": "PaperId",
             "summarizeBy": "none"
           },
           {
@@ -880,7 +922,7 @@
                 "    #\"Unpivoted Columns2\" = Table.UnpivotOtherColumns(#\"Changed Type3\", {\"Paper ID\"}, \"Attribute\", \"Value\"),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Unpivoted Columns2\", each ([Value] <> \"(Primary)\" and [Value] <> \"(primary)\" and [Value] <> \"(Secondary)\" and [Value] <> \"(secondary)\")),",
                 "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Attribute\"}),",
-                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns2\",{{\"Value\", \"Category\"}})",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns2\",{{\"Value\", \"Category\"}, {\"Paper ID\", \"PaperId\"}})",
                 "in",
                 "    #\"Renamed Columns1\""
               ],
@@ -902,20 +944,6 @@
           }
         ],
         "columns": [
-          {
-            "name": "Column1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "c5b3dc42-25e2-4172-a124-d16fc6943618",
-            "sourceColumn": "Column1",
-            "summarizeBy": "sum"
-          },
           {
             "name": "Title",
             "annotations": [
@@ -1097,6 +1125,20 @@
             "lineageTag": "c542f7b9-ec3e-47cf-8436-575685b83e9f",
             "sourceColumn": "Citation Count",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Paper ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "36c0df6c-cdbc-4a47-af97-7237f03a8a02",
+            "sourceColumn": "Paper ID",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "68cf0ab1-4c19-4dde-aff5-188195f58815",
@@ -1114,9 +1156,9 @@
                 "    #\"Added Index\" = Table.AddIndexColumn(#\"Changed Type\", \"Index\", 0, 1, Int64.Type),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Added Index\", each [Index] <> null and [Index] <> \"\"),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows\",{\"Index\"}),",
-                "    #\"Filtered Rows1\" = Table.SelectRows(#\"Removed Columns\", each [#\"\"] = 1284)",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"\", \"Paper ID\"}})",
                 "in",
-                "    #\"Filtered Rows1\""
+                "    #\"Renamed Columns\""
               ],
               "type": "m"
             }
@@ -1323,6 +1365,290 @@
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('Papers_all'[Published Date])), 1, 1), Date(Year(MAX('Papers_all'[Published Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Authors",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Author",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f08e8cea-1988-499d-b573-1da731e0e2f0",
+            "sourceColumn": "Author",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AuthorId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "593a0801-b945-4c89-9229-896dbe25e5a0",
+            "sourceColumn": "AuthorId",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "94461db9-df32-422a-9f66-c6ec5d115574",
+        "partitions": [
+          {
+            "name": "Authors",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\dmccaskill\\source\\repos\\SGHacks\\SGHacks\\data\\arxiv_papers_full_v2_w_full_text_and_cite.csv\"),[Delimiter=\",\", Columns=15, Encoding=65001]),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(Source,{\"Column2\"}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Removed Columns2\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"\", Int64.Type}, {\"Title\", type text}, {\"PDF URL\", type text}, {\"Author\", type text}, {\"DOI\", type text}, {\"Published Date\", type datetime}, {\"Summary\", type text}, {\"Journal Ref\", type text}, {\"Primary Category\", type text}, {\"Category\", type text}, {\"Entry ID\", type text}, {\"Full Text\", type text}, {\"Citations\", type text}, {\"Citation Count\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Title\", \"PDF URL\", \"DOI\", \"Published Date\", \"Summary\", \"Journal Ref\", \"Primary Category\", \"Category\", \"Entry ID\", \"Full Text\", \"Citations\", \"Citation Count\"}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Columns\",\"arxiv.Result.Author\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"[\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"]\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"(\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\")\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"'\",\"\",Replacer.ReplaceText,{\"Author\"}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Replaced Value5\", \"Author\", Splitter.SplitTextByDelimiter(\",\", QuoteStyle.Csv), {\"Author.1\", \"Author.2\", \"Author.3\", \"Author.4\", \"Author.5\", \"Author.6\", \"Author.7\", \"Author.8\", \"Author.9\", \"Author.10\", \"Author.11\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"Author.1\", type text}, {\"Author.2\", type text}, {\"Author.3\", type text}, {\"Author.4\", type text}, {\"Author.5\", type text}, {\"Author.6\", type text}, {\"Author.7\", type text}, {\"Author.8\", type text}, {\"Author.9\", type text}, {\"Author.10\", type text}, {\"Author.11\", type text}}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Changed Type1\", {\"\"}, \"Attribute\", \"Value\"),",
+                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Unpivoted Columns\",{{\"Value\", Text.Trim, type text}}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Trimmed Text\",{\"Attribute\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Value\", \"Author\"}, {\"\", \"Paper ID\"}}),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Renamed Columns\",{\"Paper ID\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns3\"),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Duplicates\", \"Index\", 0, 1, Int64.Type),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Added Index\",{{\"Index\", \"AuthorId\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_b37c250b-2b0a-4ab9-8a20-bd90fba85b72",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "2c158627-79b3-483b-8f99-e216cd590eaf",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "d6404b11-f8a6-44c6-9f22-49a1a743d2d2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "490e856b-c63a-4d9d-8bef-159b23c8cc64",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "17652405-a95b-49d9-ad6b-ef0384125de4",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b48949b3-3fb1-46c5-a369-c49d0ae0bc57",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "fd32861a-aa19-434f-af01-306bb77d6354",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "decf7585-213e-415c-adae-7bf9c0952425",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "8eb51a36-94ab-4a37-865e-5cf9baee964c",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "a9b669e7-370b-45a0-a1f2-9ccdc2943a57",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "9c0ff283-05de-4721-b23d-9e25f95a73e2",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "441f8155-fc60-4d76-ace1-b4afc7d87b4e",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "e11c0a5d-3118-4469-b472-2f654a0cc933"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "d2438261-42c6-4795-a6a2-6acb82ae65d5",
+        "partitions": [
+          {
+            "name": "LocalDateTable_b37c250b-2b0a-4ab9-8a20-bd90fba85b72",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Citations'[PublishedDate])), 1, 1), Date(Year(MAX('Citations'[PublishedDate])), 12, 31))",
               "type": "calculated"
             }
           }
