@@ -1,0 +1,515 @@
+{
+  "version": "1.1.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "caption": "Paper"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": 0,
+          "y": 300
+        },
+        "caption": "Author"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "CITES",
+        "fromId": "n0",
+        "toId": "n0"
+      },
+      {
+        "id": "n1",
+        "type": "AUTHORED",
+        "fromId": "n1",
+        "toId": "n0"
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "1.1.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:n0",
+            "token": "Paper"
+          },
+          {
+            "$id": "nl:n1",
+            "token": "Author"
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:n0",
+            "token": "CITES"
+          },
+          {
+            "$id": "rt:n1",
+            "token": "AUTHORED"
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:n0",
+            "labels": [
+              {
+                "$ref": "#nl:n0"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "Title",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:2",
+                "token": "PDF URL",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:3",
+                "token": "DOI",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:4",
+                "token": "Published Date",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:5",
+                "token": "Primary Category",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:6",
+                "token": "Entry ID",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:7",
+                "token": "Citation Count",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:8",
+                "token": "Paper ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:9",
+                "token": "Year",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "n:n1",
+            "labels": [
+              {
+                "$ref": "#nl:n1"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:10",
+                "token": "Author",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:11",
+                "token": "Author ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:n0",
+            "type": {
+              "$ref": "#rt:n0"
+            },
+            "from": {
+              "$ref": "#n:n0"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            },
+            "properties": [
+              {
+                "$id": "p:12",
+                "token": "Citation Date",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:13",
+                "token": "Citation Year",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "r:n1",
+            "type": {
+              "$ref": "#rt:n1"
+            },
+            "from": {
+              "$ref": "#n:n1"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            },
+            "properties": []
+          }
+        ]
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "keyProperty": {
+            "$ref": "#p:8"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "keyProperty": {
+            "$ref": "#p:11"
+          }
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "fileSchemas": [
+        {
+          "$id": "f:1",
+          "fileName": "Authors.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Author",
+              "type": "string",
+              "sample": "Emre Erturk",
+              "include": true
+            },
+            {
+              "name": "Author ID",
+              "type": "integer",
+              "sample": "0",
+              "include": true
+            }
+          ]
+        },
+        {
+          "$id": "f:2",
+          "fileName": "Citations.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paper ID",
+              "type": "integer",
+              "sample": "1581",
+              "include": true
+            },
+            {
+              "name": "Citation Paper ID",
+              "type": "integer",
+              "sample": "357",
+              "include": true
+            },
+            {
+              "name": "Citation Date",
+              "type": "string",
+              "sample": "09/02/2023 17:31",
+              "include": true
+            },
+            {
+              "name": "Citation Year",
+              "type": "integer",
+              "sample": "2023",
+              "include": true
+            }
+          ]
+        },
+        {
+          "$id": "f:3",
+          "fileName": "Papers.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Title",
+              "type": "string",
+              "sample": "a survey of resources and methods for natural language processing of serbian language",
+              "include": true
+            },
+            {
+              "name": "PDF URL",
+              "type": "string",
+              "sample": "http://arxiv.org/pdf/2304.05468v1",
+              "include": true
+            },
+            {
+              "name": "DOI",
+              "type": "string",
+              "sample": "",
+              "include": true
+            },
+            {
+              "name": "Published Date",
+              "type": "string",
+              "sample": "11/04/2023 20:33",
+              "include": true
+            },
+            {
+              "name": "Primary Category",
+              "type": "string",
+              "sample": "cs.CL",
+              "include": true
+            },
+            {
+              "name": "Entry ID",
+              "type": "string",
+              "sample": "http://arxiv.org/abs/2304.05468v1",
+              "include": true
+            },
+            {
+              "name": "Citation Count",
+              "type": "boolean",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "Paper ID",
+              "type": "integer",
+              "sample": "15",
+              "include": true
+            },
+            {
+              "name": "Year",
+              "type": "integer",
+              "sample": "2023",
+              "include": true
+            }
+          ]
+        },
+        {
+          "$id": "f:4",
+          "fileName": "Paper Authors.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paper ID",
+              "type": "integer",
+              "sample": "0",
+              "include": true
+            },
+            {
+              "name": "Author ID",
+              "type": "integer",
+              "sample": "0",
+              "include": true
+            }
+          ]
+        }
+      ],
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "fileSchema": {
+            "$ref": "#f:3"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Title",
+              "property": {
+                "$ref": "#p:1"
+              }
+            },
+            {
+              "fieldName": "PDF URL",
+              "property": {
+                "$ref": "#p:2"
+              }
+            },
+            {
+              "fieldName": "DOI",
+              "property": {
+                "$ref": "#p:3"
+              }
+            },
+            {
+              "fieldName": "Published Date",
+              "property": {
+                "$ref": "#p:4"
+              }
+            },
+            {
+              "fieldName": "Primary Category",
+              "property": {
+                "$ref": "#p:5"
+              }
+            },
+            {
+              "fieldName": "Entry ID",
+              "property": {
+                "$ref": "#p:6"
+              }
+            },
+            {
+              "fieldName": "Citation Count",
+              "property": {
+                "$ref": "#p:7"
+              }
+            },
+            {
+              "fieldName": "Paper ID",
+              "property": {
+                "$ref": "#p:8"
+              }
+            },
+            {
+              "fieldName": "Year",
+              "property": {
+                "$ref": "#p:9"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "fileSchema": {
+            "$ref": "#f:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Author",
+              "property": {
+                "$ref": "#p:10"
+              }
+            },
+            {
+              "fieldName": "Author ID",
+              "property": {
+                "$ref": "#p:11"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:n0"
+          },
+          "fileSchema": {
+            "$ref": "#f:2"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Citation Date",
+              "property": {
+                "$ref": "#p:12"
+              }
+            },
+            {
+              "fieldName": "Citation Year",
+              "property": {
+                "$ref": "#p:13"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "Citation Paper ID"
+          },
+          "toMapping": {
+            "fieldName": "Paper ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n1"
+          },
+          "fileSchema": {
+            "$ref": "#f:4"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "Author ID"
+          },
+          "toMapping": {
+            "fieldName": "Paper ID"
+          }
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": []
+    },
+    "errors": {
+      "fileSchemaErrors": [],
+      "nodeErrors": [],
+      "relationshipErrors": []
+    }
+  }
+}

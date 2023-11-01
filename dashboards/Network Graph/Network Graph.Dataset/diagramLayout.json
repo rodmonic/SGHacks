@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 263.20001220703125,
+        "y": 107.19999694824219
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 852,
+            "y": 0
+          },
+          "nodeIndex": "Papers",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 370,
+            "y": 54
+          },
+          "nodeIndex": "Categories",
+          "nodeLineageTag": "f51bb37f-9ab4-4668-b440-e6e52b834d0c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 246,
+            "y": 366
+          },
+          "nodeIndex": "Citations",
+          "nodeLineageTag": "c05675d0-7f50-48a2-8ef4-961f9495065a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 856,
+            "y": 365
+          },
+          "nodeIndex": "Papers_all",
+          "nodeLineageTag": "68cf0ab1-4c19-4dde-aff5-188195f58815",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 894,
+            "y": 268.5
+          },
+          "nodeIndex": "Authors",
+          "nodeLineageTag": "94461db9-df32-422a-9f66-c6ec5d115574",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 361,
+            "y": 207
+          },
+          "nodeIndex": "PaperAuthors",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
